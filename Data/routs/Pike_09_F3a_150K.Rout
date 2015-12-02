@@ -1,0 +1,59 @@
+null device 
+          1 
+It.    0, RSS =  0.0348035, Par. =          1
+It.    1, RSS =  0.0110429, Par. =   0.719041
+It.    2, RSS =    0.01021, Par. =    0.75716
+It.    3, RSS =    0.01021, Par. =   0.757268
+It.    4, RSS =    0.01021, Par. =   0.757266
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.75727    0.03998   18.94 2.63e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02917 on 12 degrees of freedom
+
+Number of iterations to convergence: 4 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =  0.0146604, Par. =          1        0.5
+It.    1, RSS = 0.00970517, Par. =    1.32023    0.41688
+It.    2, RSS = 0.00940076, Par. =    1.35246   0.432684
+It.    3, RSS =  0.0094003, Par. =    1.34957   0.434177
+It.    4, RSS =  0.0094003, Par. =    1.34954   0.434218
+It.    5, RSS =  0.0094003, Par. =    1.34954    0.43422
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.34954    0.17998   7.498 1.20e-05 ***
+k2  0.43422    0.06575   6.605 3.84e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02923 on 11 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     12  0.0102100                             
+2     11  0.0094003  1 0.00080965  0.9474 0.3513
+       df       AIC
+adair1  2 -52.04903
+adair2  3 -51.12311
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

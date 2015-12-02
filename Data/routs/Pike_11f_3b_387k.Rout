@@ -1,0 +1,63 @@
+null device 
+          1 
+It.    0, RSS =   0.403481, Par. =          1
+It.    1, RSS =  0.0582912, Par. =    2.00386
+It.    2, RSS =  0.0141309, Par. =    2.71531
+It.    3, RSS =  0.0129302, Par. =    2.87378
+It.    4, RSS =  0.0129275, Par. =    2.88167
+It.    5, RSS =  0.0129275, Par. =    2.88183
+It.    6, RSS =  0.0129275, Par. =    2.88184
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   2.8818     0.1439   20.02  3.1e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02936 on 15 degrees of freedom
+
+Number of iterations to convergence: 6 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =    0.73901, Par. =          1        0.5
+It.    1, RSS =   0.246639, Par. =    3.49567   0.460634
+It.    2, RSS =  0.0318048, Par. =    6.40229   0.868892
+It.    3, RSS =  0.0125449, Par. =     6.4897     1.2447
+It.    4, RSS =  0.0122658, Par. =    6.37982    1.32089
+It.    5, RSS =  0.0122654, Par. =    6.38993    1.31738
+It.    6, RSS =  0.0122654, Par. =    6.38985    1.31761
+It.    7, RSS =  0.0122654, Par. =    6.38991    1.31759
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   6.3899     0.7863   8.127 1.14e-06 ***
+k2   1.3176     0.1530   8.611 5.76e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0296 on 14 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     15   0.012927                             
+2     14   0.012265  1 0.00066216  0.7558 0.3993
+       df       AIC
+adair1  2 -64.52971
+adair2  3 -63.37098
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

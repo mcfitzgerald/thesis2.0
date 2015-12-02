@@ -1,0 +1,63 @@
+null device 
+          1 
+It.    0, RSS =  0.0339744, Par. =          1
+It.    1, RSS =  0.0336013, Par. =    1.03407
+It.    2, RSS =   0.033598, Par. =    1.03075
+It.    3, RSS =  0.0335979, Par. =    1.03113
+It.    4, RSS =  0.0335979, Par. =    1.03108
+It.    5, RSS =  0.0335979, Par. =    1.03109
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.03109    0.08412   12.26 7.12e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.04899 on 14 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =  0.0724831, Par. =          1        0.5
+It.    1, RSS =  0.0116744, Par. =    1.12017   0.816678
+It.    2, RSS = 0.00946586, Par. =    1.00319   0.987639
+It.    3, RSS = 0.00942542, Par. =    1.00172    1.00663
+It.    4, RSS = 0.00942534, Par. =    1.00315    1.00507
+It.    5, RSS = 0.00942534, Par. =    1.00316     1.0051
+It.    6, RSS = 0.00942534, Par. =    1.00317     1.0051
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.0032     0.1523   6.588 1.75e-05 ***
+k2   1.0051     0.1490   6.745 1.37e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02693 on 13 degrees of freedom
+
+Number of iterations to convergence: 6 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df   Sum Sq F value    Pr(>F)    
+1     14   0.033598                                  
+2     13   0.009425  1 0.024173   33.34 6.446e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       df       AIC
+adair1  2 -44.95196
+adair2  3 -62.01790
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

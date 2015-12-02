@@ -1,0 +1,63 @@
+null device 
+          1 
+It.    0, RSS =    0.13288, Par. =          1
+It.    1, RSS =  0.0235084, Par. =    1.56517
+It.    2, RSS =  0.0202532, Par. =    1.71821
+It.    3, RSS =  0.0202526, Par. =    1.71605
+It.    4, RSS =  0.0202526, Par. =    1.71619
+It.    5, RSS =  0.0202526, Par. =    1.71618
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.7162     0.1088   15.78  2.6e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03803 on 14 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =   0.332924, Par. =          1        0.5
+It.    1, RSS =  0.0556981, Par. =    2.36998   0.664636
+It.    2, RSS =  0.0144546, Par. =    2.60918    1.02374
+It.    3, RSS =  0.0129275, Par. =    2.40021     1.1882
+It.    4, RSS =  0.0129093, Par. =    2.39049    1.20631
+It.    5, RSS =  0.0129093, Par. =    2.39055     1.2062
+It.    6, RSS =  0.0129093, Par. =    2.39055     1.2062
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   2.3905     0.3580   6.678 1.52e-05 ***
+k2   1.2062     0.1753   6.882 1.11e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03151 on 13 degrees of freedom
+
+Number of iterations to convergence: 6 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     14   0.020253                               
+2     13   0.012909  1 0.0073434   7.395 0.01753 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       df       AIC
+adair1  2 -52.54465
+adair2  3 -57.29974
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

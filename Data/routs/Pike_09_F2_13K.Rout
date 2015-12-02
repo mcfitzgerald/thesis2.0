@@ -1,0 +1,63 @@
+null device 
+          1 
+It.    0, RSS =   0.738516, Par. =          1
+It.    1, RSS =   0.126214, Par. =    2.45637
+It.    2, RSS =  0.0175003, Par. =    3.80577
+It.    3, RSS =  0.0132441, Par. =    4.20308
+It.    4, RSS =  0.0132358, Par. =    4.22234
+It.    5, RSS =  0.0132358, Par. =    4.22233
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   4.2223     0.2142   19.71 4.55e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03191 on 13 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =     1.1746, Par. =          1        0.5
+It.    1, RSS =   0.647461, Par. =    4.66682   0.172849
+It.    2, RSS =   0.161978, Par. =    12.0061   0.467919
+It.    3, RSS =  0.0384086, Par. =    11.5462     1.1158
+It.    4, RSS =   0.015637, Par. =    8.43044    1.82986
+It.    5, RSS =  0.0132236, Par. =    8.32261    2.12856
+It.    6, RSS =  0.0132164, Par. =    8.30195    2.14969
+It.    7, RSS =  0.0132164, Par. =    8.30354    2.14915
+It.    8, RSS =  0.0132164, Par. =    8.30351    2.14916
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   8.3035     1.1456   7.248 1.02e-05 ***
+k2   2.1492     0.3151   6.821 1.85e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03319 on 12 degrees of freedom
+
+Number of iterations to convergence: 8 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     13   0.013236                             
+2     12   0.013216  1 1.9409e-05  0.0176 0.8966
+       df       AIC
+adair1  2 -53.76414
+adair2  3 -51.78469
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

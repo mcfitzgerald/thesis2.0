@@ -1,0 +1,70 @@
+null device 
+          1 
+It.    0, RSS =    3.63503, Par. =          1
+It.    1, RSS =    3.07941, Par. =    0.73662
+It.    2, RSS =     1.8868, Par. =   0.358693
+It.    3, RSS =     1.7302, Par. =   0.322624
+It.    4, RSS =     1.4447, Par. =   0.263007
+It.    5, RSS =    0.88356, Par. =   0.165516
+It.    6, RSS =  0.0198352, Par. =  0.0416189
+It.    7, RSS = 0.00713072, Par. =  0.0339815
+It.    8, RSS = 0.00701336, Par. =  0.0345787
+It.    9, RSS = 0.00701333, Par. =  0.0345883
+It.   10, RSS = 0.00701333, Par. =  0.0345884
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1 0.034588   0.001082   31.97   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01921 on 19 degrees of freedom
+
+Number of iterations to convergence: 10 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =    3.15856, Par. =          1        0.5
+It.    1, RSS =    1.40595, Par. =   0.524556   0.125336
+It.    2, RSS =    1.22032, Par. =   0.470056    0.10573
+It.    3, RSS =   0.858109, Par. =   0.372851  0.0724388
+It.    4, RSS =   0.229738, Par. =   0.217451  0.0267745
+It.    5, RSS =  0.0372197, Par. =   0.124927  0.0159755
+It.    6, RSS =  0.0136391, Par. =  0.0583655  0.0158398
+It.    7, RSS = 0.00697467, Par. =  0.0707646   0.016481
+It.    8, RSS =  0.0069143, Par. =  0.0716979  0.0166836
+It.    9, RSS =  0.0069143, Par. =  0.0717082  0.0166838
+It.   10, RSS =  0.0069143, Par. =  0.0717081  0.0166838
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1 0.071708   0.005609   12.78 1.81e-10 ***
+k2 0.016684   0.001308   12.76 1.87e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0196 on 18 degrees of freedom
+
+Number of iterations to convergence: 10 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     19  0.0070133                             
+2     18  0.0069143  1 9.9036e-05  0.2578 0.6178
+       df       AIC
+adair1  2 -98.35595
+adair2  3 -96.64038
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

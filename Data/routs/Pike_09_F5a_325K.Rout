@@ -1,0 +1,62 @@
+null device 
+          1 
+It.    0, RSS =   0.317773, Par. =          1
+It.    1, RSS =   0.158919, Par. =    0.75735
+It.    2, RSS =  0.0127837, Par. =   0.392747
+It.    3, RSS =  0.0121975, Par. =   0.408503
+It.    4, RSS =  0.0121975, Par. =    0.40837
+It.    5, RSS =  0.0121975, Par. =   0.408374
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.40837    0.01969   20.74 6.58e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02952 on 14 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =   0.134334, Par. =          1        0.5
+It.    1, RSS =  0.0610101, Par. =   0.732004   0.112418
+It.    2, RSS =  0.0135892, Par. =   0.784403   0.190866
+It.    3, RSS =  0.0104931, Par. =   0.691748   0.235365
+It.    4, RSS =  0.0103279, Par. =    0.68957   0.244636
+It.    5, RSS =  0.0103264, Par. =    0.68715   0.245944
+It.    6, RSS =  0.0103264, Par. =   0.687119   0.246024
+It.    7, RSS =  0.0103264, Par. =   0.687102   0.246033
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.68710    0.08840   7.773 3.06e-06 ***
+k2  0.24603    0.03174   7.753 3.15e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02818 on 13 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df    Sum Sq F value Pr(>F)
+1     14   0.012198                            
+2     13   0.010326  1 0.0018711  2.3556 0.1488
+       df       AIC
+adair1  2 -60.15045
+adair2  3 -60.64839
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

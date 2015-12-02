@@ -1,0 +1,66 @@
+null device 
+          1 
+It.    0, RSS =   0.393474, Par. =          1
+It.    1, RSS =  0.0737142, Par. =    1.99518
+It.    2, RSS =  0.0254051, Par. =     2.7613
+It.    3, RSS =  0.0231332, Par. =    2.99055
+It.    4, RSS =   0.023109, Par. =    3.01617
+It.    5, RSS =  0.0231089, Par. =    3.01797
+It.    6, RSS =  0.0231089, Par. =    3.01809
+It.    7, RSS =  0.0231089, Par. =     3.0181
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   3.0181     0.2289   13.19 6.69e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.04216 on 13 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =   0.699692, Par. =          1        0.5
+It.    1, RSS =   0.256402, Par. =    3.50586   0.439232
+It.    2, RSS =  0.0386354, Par. =    7.09767   0.791712
+It.    3, RSS =  0.0168319, Par. =    8.29658    1.09714
+It.    4, RSS =  0.0165926, Par. =    8.37226    1.14749
+It.    5, RSS =  0.0165918, Par. =    8.39897    1.14364
+It.    6, RSS =  0.0165918, Par. =    8.39831    1.14397
+It.    7, RSS =  0.0165918, Par. =    8.39845    1.14394
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   8.3984     1.3551   6.197  4.6e-05 ***
+k2   1.1439     0.1653   6.922  1.6e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03718 on 12 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df    Sum Sq F value Pr(>F)  
+1     13   0.023109                              
+2     12   0.016592  1 0.0065171  4.7135 0.0507 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       df       AIC
+adair1  2 -45.96203
+adair2  3 -48.60037
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

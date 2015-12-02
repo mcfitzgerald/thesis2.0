@@ -1,0 +1,63 @@
+null device 
+          1 
+It.    0, RSS =   0.262435, Par. =          1
+It.    1, RSS =  0.0507595, Par. =   0.602634
+It.    2, RSS = 0.00717281, Par. =   0.381941
+It.    3, RSS = 0.00494607, Par. =   0.413634
+It.    4, RSS = 0.00494175, Par. =   0.415137
+It.    5, RSS = 0.00494175, Par. =    0.41515
+It.    6, RSS = 0.00494175, Par. =    0.41515
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.41515    0.01367   30.36 3.54e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01879 on 14 degrees of freedom
+
+Number of iterations to convergence: 6 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =   0.107888, Par. =          1        0.5
+It.    1, RSS =  0.0448989, Par. =   0.850682   0.390738
+It.    2, RSS = 0.00696588, Par. =    0.84482   0.170988
+It.    3, RSS = 0.00485364, Par. =   0.874301    0.19382
+It.    4, RSS =  0.0048379, Par. =   0.865646    0.19747
+It.    5, RSS = 0.00483783, Par. =   0.865206   0.197706
+It.    6, RSS = 0.00483783, Par. =   0.865174   0.197719
+It.    7, RSS = 0.00483783, Par. =   0.865173    0.19772
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.86517    0.07270   11.90 2.31e-08 ***
+k2  0.19772    0.01881   10.51 1.01e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01929 on 13 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     14  0.0049417                             
+2     13  0.0048378  1 0.00010392  0.2792 0.6061
+       df       AIC
+adair1  2 -73.70314
+adair2  3 -72.02194
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

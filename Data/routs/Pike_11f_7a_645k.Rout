@@ -1,0 +1,64 @@
+null device 
+          1 
+It.    0, RSS =   0.553671, Par. =          1
+It.    1, RSS =   0.448141, Par. =      0.879
+It.    2, RSS =   0.257599, Par. =   0.667064
+It.    3, RSS =  0.0148122, Par. =   0.347449
+It.    4, RSS = 0.00182739, Par. =   0.281428
+It.    5, RSS = 0.00168155, Par. =   0.287098
+It.    6, RSS = 0.00168153, Par. =   0.287157
+It.    7, RSS = 0.00168153, Par. =   0.287157
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1 0.287157   0.005247   54.72   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01096 on 14 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =   0.319966, Par. =          1        0.5
+It.    1, RSS =   0.242004, Par. =   0.900244   0.436999
+It.    2, RSS =   0.111498, Par. =   0.726452   0.324839
+It.    3, RSS = 0.00818615, Par. =   0.572285   0.110093
+It.    4, RSS = 0.00173598, Par. =   0.582661   0.138689
+It.    5, RSS = 0.00168096, Par. =    0.57601    0.14302
+It.    6, RSS = 0.00168092, Par. =   0.576124   0.143087
+It.    7, RSS = 0.00168092, Par. =   0.576119   0.143089
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1 0.576119   0.028885   19.95 3.93e-11 ***
+k2 0.143089   0.007637   18.74 8.64e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01137 on 13 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     14  0.0016815                             
+2     13  0.0016809  1 6.1189e-07  0.0047 0.9462
+       df       AIC
+adair1  2 -89.87334
+adair2  3 -87.87880
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

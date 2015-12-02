@@ -1,0 +1,64 @@
+null device 
+          1 
+It.    0, RSS =  0.0903598, Par. =          1
+It.    1, RSS =  0.0155382, Par. =    1.46864
+It.    2, RSS =  0.0136593, Par. =    1.57838
+It.    3, RSS =  0.0136592, Par. =    1.57718
+It.    4, RSS =  0.0136592, Par. =    1.57724
+It.    5, RSS =  0.0136592, Par. =    1.57724
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.5772     0.0831   18.98 2.18e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03124 on 14 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =   0.265709, Par. =          1        0.5
+It.    1, RSS =  0.0534161, Par. =     2.4544    0.53488
+It.    2, RSS =  0.0121164, Par. =    2.77961   0.816942
+It.    3, RSS = 0.00932979, Par. =    2.43469   0.990565
+It.    4, RSS = 0.00916602, Par. =    2.41333    1.03281
+It.    5, RSS = 0.00916425, Par. =    2.40391    1.03868
+It.    6, RSS = 0.00916423, Par. =    2.40335    1.03918
+It.    7, RSS = 0.00916423, Par. =    2.40328    1.03922
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1   2.4033     0.2958   8.126 1.88e-06 ***
+k2   1.0392     0.1240   8.381 1.34e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02655 on 13 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     14  0.0136592                               
+2     13  0.0091642  1 0.0044949  6.3763 0.02536 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       df       AIC
+adair1  2 -58.45277
+adair2  3 -62.43930
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

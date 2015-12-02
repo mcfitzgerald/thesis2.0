@@ -1,0 +1,64 @@
+null device 
+          1 
+It.    0, RSS =  0.0773142, Par. =          1
+It.    1, RSS =  0.0132952, Par. =   0.574799
+It.    2, RSS = 0.00933367, Par. =   0.633421
+It.    3, RSS =  0.0092988, Par. =   0.639476
+It.    4, RSS = 0.00929871, Par. =   0.639793
+It.    5, RSS = 0.00929871, Par. =   0.639808
+It.    6, RSS = 0.00929871, Par. =   0.639809
+
+Formula: B ~ (k1 * L)/(1 + (k1 * L))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.63981    0.02835   22.57 8.22e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02674 on 13 degrees of freedom
+
+Number of iterations to convergence: 6 
+Achieved convergence tolerance: 1.49e-08
+
+It.    0, RSS =  0.0315142, Par. =          1        0.5
+It.    1, RSS =  0.0127915, Par. =    1.15914   0.345924
+It.    2, RSS =  0.0061039, Par. =    1.58592   0.229278
+It.    3, RSS = 0.00462105, Par. =    1.67167   0.247747
+It.    4, RSS = 0.00461905, Par. =    1.67259   0.248745
+It.    5, RSS = 0.00461905, Par. =    1.67253   0.248756
+It.    6, RSS = 0.00461905, Par. =    1.67253   0.248756
+
+Formula: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + 
+    (k1 * k2 * (L^2)))))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.67253    0.13243   12.63 2.73e-08 ***
+k2  0.24876    0.01894   13.14 1.75e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01962 on 12 degrees of freedom
+
+Number of iterations to convergence: 6 
+Achieved convergence tolerance: 1.49e-08
+
+Analysis of Variance Table
+
+Model 1: B ~ (k1 * L)/(1 + (k1 * L))
+Model 2: B ~ (((k1 * L) + (2 * (L^2) * k2 * k1))/(2 * (1 + (k1 * L) + (k1 * k2 * (L^2)))))
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)   
+1     13  0.0092987                                
+2     12  0.0046191  1 0.0046797  12.157 0.00449 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       df       AIC
+adair1  2 -58.70684
+adair2  3 -66.50244
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
