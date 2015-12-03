@@ -1,0 +1,255 @@
+0.0087152
+Livneh_86_4a
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.84887    0.09103   9.325    3e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  2.95586    0.40659   7.270 4.71e-05 ***
+k2  0.24002    0.03513   6.832 7.62e-05 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value   Pr(>F)   
+1     10  0.0262883                                
+2      9  0.0087152  1 0.017573  18.147 0.002111 **
+0.0026508
+Pike_08_F2_447K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.9804     0.1472   13.46 2.12e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  6.70142    0.36170   18.53 9.94e-11 ***
+k2  0.57663    0.03062   18.83 8.11e-11 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value    Pr(>F)    
+1     14  0.0260194                                  
+2     13  0.0026508  1 0.023369   114.6 8.115e-08 ***
+0.012303
+Pike_09_F1_1200K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.99964    0.06403   15.61 8.43e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  2.61536    0.33693   7.762 5.11e-06 ***
+k2  0.37339    0.04964   7.521 7.03e-06 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     13   0.017782                               
+2     12   0.012303  1 0.0054793  5.3443 0.03935 *
+0.013543
+Pike_09_F1_20K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1   3.1390     0.2181   14.39 8.79e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   4.1520     0.7122    5.83 5.88e-05 ***
+k2   2.2416     0.3575    6.27 2.88e-05 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     14   0.021214                               
+2     13   0.013543  1 0.0076712  7.3635 0.01773 *
+0.0058705
+Pike_09_F2_98K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  2.60335    0.08588   30.31 3.61e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   4.9579     0.4116   12.04 2.00e-08 ***
+k2   1.3705     0.1188   11.54 3.34e-08 ***
+---
+  Res.Df Res.Sum Sq Df     Sum Sq F value Pr(>F)
+1     14  0.0060615                             
+2     13  0.0058705  1 0.00019106  0.4231 0.5267
+--
+Pike_09_F3a_485K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.34825    0.08142   16.56 1.37e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.7062     0.1774   9.615 2.83e-07 ***
+k2   1.1016     0.1168   9.429 3.54e-07 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value    Pr(>F)    
+1     14  0.0184810                                  
+2     13  0.0058705  1 0.012611  27.925 0.0001478 ***
+0.0046191
+Pike_09_F3b_112K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.63981    0.02835   22.57 8.22e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.67253    0.13243   12.63 2.73e-08 ***
+k2  0.24876    0.01894   13.14 1.75e-08 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)   
+1     13  0.0092987                                
+2     12  0.0046191  1 0.0046797  12.157 0.00449 **
+0.005089
+Pike_09_F3b_14K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.31864    0.01295   24.61 2.74e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.78313    0.06985  11.212 1.03e-07 ***
+k2  0.12616    0.01343   9.394 7.01e-07 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     13   0.007400                               
+2     12   0.005089  1 0.0023109  5.4492 0.03777 *
+0.0025318
+Pike_09_F4_166K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.32743    0.03764   35.27 2.71e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  2.30214    0.14952   15.40 2.88e-09 ***
+k2  0.75803    0.04677   16.21 1.60e-09 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     13  0.0037601                               
+2     12  0.0025318  1 0.0012283  5.8216 0.03274 *
+0.0091642
+Pike_09_F4_685K
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.5772     0.0831   18.98 2.18e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   2.4033     0.2958   8.126 1.88e-06 ***
+k2   1.0392     0.1240   8.381 1.34e-06 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     14  0.0136592                               
+2     13  0.0091642  1 0.0044949  6.3763 0.02536 *
+0.0025286
+Pike_11f_5a_14k
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.58093    0.02221   26.16 5.96e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.43008    0.09370   15.26 9.49e-09 ***
+k2  0.23484    0.01581   14.85 1.26e-08 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value Pr(>F)   
+1     12  0.0051467                               
+2     11  0.0025286  1 0.0026181  11.389 0.0062 **
+0.0063187
+Pike_11f_5a_591k
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.71662    0.03512   20.41  1.1e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.11673    0.13007   8.586 3.32e-06 ***
+k2  0.46704    0.05558   8.404 4.08e-06 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     12  0.0096625                               
+2     11  0.0063187  1 0.0033438  5.8212 0.03445 *
+0.0051499
+Pike_11f_5b_1400k
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.91738    0.05531   16.59 3.98e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.14982    0.12128   9.481 6.35e-07 ***
+k2  0.70943    0.07224   9.820 4.36e-07 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value    Pr(>F)    
+1     13  0.0164572                                  
+2     12  0.0051499  1 0.011307  26.348 0.0002479 ***
+0.012909
+Pike_11f_5b_24k
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.7162     0.1088   15.78  2.6e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   2.3905     0.3580   6.678 1.52e-05 ***
+k2   1.2062     0.1753   6.882 1.11e-05 ***
+---
+  Res.Df Res.Sum Sq Df    Sum Sq F value  Pr(>F)  
+1     14   0.020253                               
+2     13   0.012909  1 0.0073434   7.395 0.01753 *
+0.009425
+Pike_11f_5b_348k
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  1.03109    0.08412   12.26 7.12e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   1.0032     0.1523   6.588 1.75e-05 ***
+k2   1.0051     0.1490   6.745 1.37e-05 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value    Pr(>F)    
+1     14   0.033598                                  
+2     13   0.009425  1 0.024173   33.34 6.446e-05 ***
+0.27045
+wof_kd
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.64272    0.05623   11.43 2.51e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1   0.8530     0.1974   4.321 9.98e-05 ***
+k2   0.5096     0.1311   3.886 0.000374 ***
+---
+  Res.Df Res.Sum Sq Df  Sum Sq F value  Pr(>F)  
+1     41    0.29886                             
+2     40    0.27045  1 0.02841   4.202 0.04697 *
+0.020572
+yard_no-linker
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1 0.015200   0.001118   13.59 3.08e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1 0.017340   0.002738   6.333 5.74e-06 ***
+k2 0.012720   0.001974   6.445 4.59e-06 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value    Pr(>F)    
+1     19   0.041445                                  
+2     18   0.020572  1 0.020872  18.263 0.0004572 ***

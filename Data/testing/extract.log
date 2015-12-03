@@ -1,0 +1,42 @@
+*ROUT
+Livneh_86_4a
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.84887    0.09103   9.325    3e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  2.95586    0.40659   7.270 4.71e-05 ***
+k2  0.24002    0.03513   6.832 7.62e-05 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value   Pr(>F)   
+1     10  0.0262883                                
+2      9  0.0087152  1 0.017573  18.147 0.002111 **
+---
+cat
+cat/n
+cat$/n
+cat
+cat/n
+cat$/n
+catn
+cat$n
+cat
+
+Livneh_86_4a
+
+   Estimate Std. Error t value Pr(>|t|)    
+k1  0.84887    0.09103   9.325    3e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--
+   Estimate Std. Error t value Pr(>|t|)    
+k1  2.95586    0.40659   7.270 4.71e-05 ***
+k2  0.24002    0.03513   6.832 7.62e-05 ***
+---
+  Res.Df Res.Sum Sq Df   Sum Sq F value   Pr(>F)   
+1     10  0.0262883                                
+2      9  0.0087152  1 0.017573  18.147 0.002111 **
+---
+========
+
