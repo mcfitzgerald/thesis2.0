@@ -1,0 +1,9 @@
+Readme for data csvs
+
+Pike 11 3b 1600 is mislabeled, it is the data for Pike 11 3b 387. The csv
+labeled Pike 11 3b 387 is a copy of the data from Pike 11 3b 12k.
+
+I have renamed the 1600 csv as 387 and removed the original 387 and replaced it
+with a csv generated from the original data library saved on google drive.
+
+--MCF 7:39PM 12-8-16
