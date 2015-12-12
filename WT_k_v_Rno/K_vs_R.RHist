@@ -1,0 +1,58 @@
+r_conc <- c(12,387,1600,24,92,447,20,167,1200)
+r_conc
+k_val <- c(2.882,1.515,0.937,3.264,2.690,1.980,3.139,1.697,0.996)
+df <- data.fram(r_conc,k_val)
+df <- data.framr(r_conc,k_val)
+df <- data.frame(r_conc,k_val)
+df
+plot(k_val,r_conc)
+dev.off()
+plot(r_conc,k_val)
+plot(r_conc,k_val,log="x")
+plot(r_conc,k_val)
+plot(r_conc,k_val,log="x",log="y")
+plot(r_conc,k_val,log="xy")
+dev.off()
+plot(r_conc,k_val,log="x")
+plot(r_conc,k_val,log="xy")
+plot(r_conc,k_val,log="x")
+plot(r_conc,k_val,log="xy")
+loglogmod <- lm(k_val ~ r_conc)
+summary(loglogmod)
+loglogmod <- lm(log(k_val) ~ (r_con)c)
+loglogmod <- lm(log(k_val) ~ (r_conc))
+summary(loglogmod)
+loglogmod <- lm(log(k_val) ~ log(r_conc))
+summary(loglogmod)
+loglogmod
+plot(log(r_conc),log(k_val
+df
+plot(r_conc,k_val)
+lin_mod <- lm(k_val ~ r_conc)
+summary(lin_mod)
+semlog_mod <- lm(log(k_val) ~ r_conc)
+loglog_mod <- lm(log(k_val) ~ log(r_conc))
+anova(lin_mod,semlog_mod,loglog_mod)
+anova(lin_mod,semlog_mod)
+anova(loglog_mod,semlog_mod)
+summary(semlog_mod)
+plot(log(k_val),r_conc)
+plot(r_conc,log(k_val))
+10^0.99903
+log(3)
+e
+E
+exp(3)
+ln(3)
+?log
+plot(log10(k_val),r_conc)
+plot(r_conc,log10(k_val))
+semlog_mod <- lm(log10(k_val) ~ r_conc)
+summary(semlog_mod)
+10^0.43
+saveimage("K_vs_R.RData")
+save.image("K_vs_R.RData")
+ls
+ls()
+dir()
+savehistory("K_vs_R.RHist")
