@@ -1,0 +1,287 @@
+source("additive_sim.r")
+dev.off
+dev.off()
+ls
+ls()
+plot(L,B,log="x")
+abline(h=2)
+abline(v=(1/k1))
+abline(v=(1/k2))
+dev.off()
+source("additive_sim.r")
+plot(L,B,log="x")
+source("additive_sim.r")
+ls()
+plot(L,B,log="x")
+abline(h=c(0.1,0.9))
+dev.off()
+source("additive_sim.r")
+ls
+ls()
+B_add <- B
+L_add <- L
+dev.off()
+source("adair1_sim.r")
+ls()
+B
+B_add
+?which
+which(abs(B-0.9)==min(abs(B-0.9)))
+B[39]
+B[38]
+B[40]
+which(abs(B-0.1)==min(abs(B-0.1)))
+log(100)
+log(10,100)
+?log
+log10(100)
+log10(98)
+log10(96)
+log10(92)
+log10(80)
+log10(82)
+log10(83)
+L[20]
+L[21]
+L[39
+]
+log10(100) - log10(5)
+log10(100) - log10(2)
+log10(100) - log10(1.2)
+log10(L[39]) - log10([21])
+log10(L[39]) - log10(L[21])
+log10(L[39]) - log10(L[20])
+which(abs(B-0.1)==min(abs(B-0.1)))
+hold_vec <- which(abs(B-0.1)==min(abs(B-0.1)))
+hold_vec[1]
+hold_vec[1] == hold_vec[2]
+min(hold_vec)
+dev.off()
+source("additive_sim.r")
+ls()
+bind_int
+source("sprintf_test.r")
+source("sprintf_test.r")
+dev.off()
+source("additive_sim.r")
+3
+dev.off()
+source("additive_sim.r")
+dev.off()
+dev.off()
+source("additive_sim.r")
+dev.off()
+source("additive_sim.r")
+dev.off()
+source("additive_sim.r")
+source("additive_sim.r")
+dev.off()
+source("mix_sim.r")
+source("mix_sim.r")
+dev.off()
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+dev.off()
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+dev.off
+dev.off()
+source("mix_sim.r")
+source("mix_sim.r")
+dev.off
+dev.off()
+source("mix_sim.r")
+dev.off()
+reset
+reset()
+clear()
+source("mix_sim.r")
+as.float("1")
+as.numeric("1")
+b <- as.numeric("1")
+b
+b - 0.4
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r"
+)
+source("adair2_sim.r")
+source("adair2_sim.r")
+abline(h=0.9)
+abline(h=0.1)
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+1:10
+1:10:2
+1:10 by 2
+1:10 by=2
+source("adair2_sim.r")
+ls()
+rm(*)
+rm("*")
+rm(ls())
+rm("ls()")
+ls()
+rm(list=ls())
+ls()
+source("adair2_sim.r")
+B[40]
+B[22]
+L[40]
+L[22]
+log10(10)
+log10(0.2)
+log10(10) - log10(0.2)
+abline(h=0.1)
+abline(h=0.9)
+log10(10) - log10(0.1)
+log10(0.1) - log10(0.001)
+log10(0.1) - log10(0.01)
+log10(0.1) - log10(0.1)
+log10(0.1) - log10(`0)
+log10(0.1) - log10(10)
+)
+log10(0.1) - log10(10)
+source("adair2_sim.r")
+abline(h=c(0.1,0.9))
+source("adair2_sim.r")
+source("adair2_sim.r")
+source("adair2_sim.r")
+rm(list=ls())
+dev.off()
+eqn <- quote(1/k1)
+eqn
+k1 = 2
+L = 16
+B <- eqn*L
+eqn
+source("scrap.r")
+rm(list=ls())
+source("mix2_sim.r"
+)
+source("mix2_sim.r")
+source("adair2_sim.r")
+save.image("sim_test.RData")
+savehistory("sim_test.RHist")
+ls()
+rm(list=ls())
+source("mix2_sim.r")
+source("mix2_sim.r")
+dev.off()
+ls
+ls()
+rm(list=ls())
+ls()
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+source("mix_sim.r")
+L[32]
+B[32]
+B[10]
+abline(h=c(0.1,0.9))
+source("mix2_sim.r")
+10^(-3:3)
+10^(-5:5)
+?seq
+seq(1,10, by = 0.25)
+rm(list=ls())
+seq(0,10, by = 0.25)
+seq(0,9,by=0.1)
+seq(0,5,by=0.1)
+seqto5 <- seq(0,5,by=0.1)
+seqto5 %o% 10^(-3:3)
+c(1:10 %o% 10^(-3:3))
+c(seqto5 %o% 10^(-3:3))
+plot(seqto5)
+distrb <- c(seqto5 %o% 10^(-3:3))
+plot(distrb)
+plot(distrb, log="x")
+boundfrac <- (seqto5/(1 + seqto5))
+plot(seqto5,boundfra,log="x")
+plot(seqto5,boundfrac,log="x")
+rm(list=ls())
+c(1:10 %o% 10^(-3:3))
+c((seq(1,10)) %o% 10^(-3:3))
+c((seq(1,10,by=0.1)) %o% 10^(-3:3))
+source("adair2_ext_sim.r")
+B[668]
+B[380]
+source("adair2_ext_sim.r")
+rm(list=ls())
+source("mix2_sim.r")
+B[643]
+B[287]
+source("mix2_sim.r")
+L[275]
+abline(v=0.011)
+abline(h=0.1,col="red")
+L[445]
+abline(v=0.9)
+abline(h=0.9,col="red")
+dev.off()
+rm(list=ls())
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")1
+source("adair2_ext_sim.r")1
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")10
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+B[476]
+B[301]
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+source("adair2_ext_sim.r")
+rm(list=ls())
+ls
+ls()
+source("mix2_sim.r")
+source("mix2_sim.r")
+source("mix2_sim.r")
+source("mix2_sim.r")
+source("mix2_sim.r")
+save.image("sim_test.RData")
+savehistory("sim_test.RHist")
