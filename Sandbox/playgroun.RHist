@@ -1,0 +1,42 @@
+source("crunch_ed.r")
+ls()
+adair1_fit
+adair2_fit
+min(which(abs(B-0.9)==min(abs(B-0.9))))
+adair1_fit <- B
+B <- adair1_fit
+min(which(abs(B-0.9)==min(abs(B-0.9))))
+B
+min(which(abs(B-0.1)==min(abs(B-0.1))))
+ls()
+L <- pred.lvals
+L[2]
+L[81]
+log10(L[81])
+log10(L[2])
+log10(L[81]) - log10(L[2])
+rm(list=ls())
+source("crunch_ed.r")
+ls()
+B <- adair1_fit
+L <- pred.lvals
+plot(L,B)
+B
+source("crunch_ed.r")
+L <- pred.lvals
+B <- adair1_fit
+B
+min(which(abs(B-0.9)==min(abs(B-0.9))))
+min(which(abs(B-0.1)==min(abs(B-0.1))))
+B[3]
+B[252]
+log10(L[252]) - log10(L[3])
+B <- adair2_fit
+min(which(abs(B-0.9)==min(abs(B-0.9))))
+min(which(abs(B-0.1)==min(abs(B-0.1))))
+log10(L[271]) - log10(L[3])
+6.38/4
+1.64/2
+1.64/4
+dir()
+savehistory("playgroun.RHist")

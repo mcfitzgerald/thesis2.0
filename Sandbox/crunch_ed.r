@@ -10,13 +10,13 @@
 
 # EDIT EACH RUN - Data source and file naming
 
-name.trunk <- "Pike_11f_3b_1600k"
+name.trunk <- "Pike_11f_3b_12k"
 
-data.file <-"Pike_11f_3b_1600k.csv"
+data.file <-"Pike_11f_3b_12k.csv"
 
 # Output messages
 
-sink(paste(name.trunk,".Rout",sep=""))
+#sink(paste(name.trunk,".Rout",sep=""))
 
 # Load libraries
 
@@ -63,7 +63,7 @@ AIC(adair1,adair2)
 
 # Build predictor L values
 
-pred.lvals <- seq((min(data.loaded$L)), (max(data.loaded$L)), length.out=100)
+pred.lvals <- seq((min(data.loaded$L)), (max(data.loaded$L)), length.out=1000)
 
 # Model prediction
 

@@ -1,0 +1,104 @@
+save.image("global.RData")
+load.image("global_anal.RData")
+load("global_anal.RData")
+ls
+ls()
+lcon1
+x
+n1
+n2
+c(n1,n2)
+rep(1,3)
+rep((1,2),(2,3)0
+rep((1,2),(2,3))
+rep(c(1,2),c(2,3))
+a <- (1,2,3,4)
+a <- c(1,2,3,4)
+a
+help(c)
+help(cbind)
+dir()
+Pike_2009_Fig1_WT <- read.csv("Pike_2009_Fig1_WT.csv")
+Pike_2009_Fig1_WT
+length(Pike_2009_Fig1_WT[1])
+Pike_2009_Fig1_WT[1]
+pike_x1 <- Pike_2009_Fig1_WT[1]
+length(pike_x1)
+typeof(pike_x1)
+pike_x1 <- as.vector(Pike_2009_Fig1_WT$egf_20k)
+typeof(pike_x1)
+length(pike_x1)
+pike_x2 <- as.vector(Pike_2009_Fig1_WT$egf_187k)
+pike_x3 <- as.vector(Pike_2009_Fig1_WT$egf_1200k)
+length(pike_x3)
+pike_x3
+na.omit(Pike_2009_Fig1_WT)
+na.omit(pike_x3)
+pike_x3 <- na.omit(pike_x3)
+length(pike_x3)
+pike_y1 <- as.vector(Pike_2009_Fig1_WT$fsat_20k)
+pike_y2 <- as.vector(Pike_2009_Fig1_WT$fsat_187k)
+pike_y3 <- as.vector(Pike_2009_Fig1_WT$fsat_1200k)
+pike_y3
+pike_y3 <- na.omit(as.vector(Pike_2009_Fig1_WT$fsat_1200k))
+pike_y3
+pike_y3 <- as.vector(Pike_2009_Fig1_WT$fsat_1200k)
+pike_y3 <- na.omit(pike_y3)
+pike_y3
+pike_y3 <- as.vector(Pike_2009_Fig1_WT$fsat_1200k)
+pike_y3
+pike_x3
+pike_x3 <- as.vector(Pike_2009_Fig1_WT$egf_1200k)
+pike_x3[1:12]
+pike_x3[1:14]
+pike_x3 <- pike_x3[1:14]
+pike_y3 <- pike_y3[1:14]
+p1 <- length(pike_x1)
+p2 <- length(pike_x2)
+p3 <- length(pike_x3)
+pike_y <- c(pike_y1, pike_y2, pike_y3)
+pike_y
+pike_x <- c(pike_x1, pike_x2, pike_x3)
+pike_x
+sel1 <- rep(c(1,0,0), c(p1,p2,p3))
+sel1
+sel2 <- rep(c(0,1,0), c(p1,p2,p3))
+sel3 <- rep(c(0,0,1), c(p1,p2,p3))
+sel3
+sel2
+library()
+library(minpack.lm)
+nlsLM
+nlsLM()
+help(nlsLM)
+f1 <- 0.0007
+f2 <- 0.007
+f3 <- 0.07
+help(function)
+help(function())
+Rfunc
+R
+R <- function(a, x, c, d, e) R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+R
+Ysat <- function(a, x, c, d, e, R) (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+R <- function(a, x, c, d, e)(a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+R
+pike_x
+x <- pike_x
+R(1,x,2,3,4)
+R
+R <- (-1 - a*x + sqrt(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+R <-function(a,x,c,d,e) (-1 - a*x + sqrt(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+R
+R(1,x,2,3,4)
+Ysat
+pike_y
+test <- nlsLM(pike_y ~ Ysat(a,x,c,d,e,R), start=list(a=5,c=100,d=1,e=0.1), trace=T)
+Ysat
+
+yvaltest <- Ysat(1,x,2,3,4,R(1,x,2,3,4))
+plot(x,yvaltest)
+test <- nlsLM(pike_y ~ Ysat(a,x,c,d,e,R(a,x,c,d,e)), start=list(a=5,c=100,d=1,e=0.1), trace=T)
+sqrt(4)
+save.history("global_anal.RHist")
+savehistory("global_anal.RHist")

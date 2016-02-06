@@ -17,7 +17,8 @@ m2 <- (1.0 - m1)
 print(m2)
 # Generate free ligand concentrations
 
-L <- c(1:10 %o% 10^(-3:3))  # Outer product of (1,2..10) and (0.001,0.01..1000)
+# Outer product of (1,2..10) and (0.001,0.01..1000)
+L <- c((seq(1,10,by=0.1)) %o% 10^(-5:5))
 
 # Generate bound fraction values
 

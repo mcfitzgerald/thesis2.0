@@ -1,0 +1,1 @@
+R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))

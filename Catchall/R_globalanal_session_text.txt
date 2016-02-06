@@ -1,0 +1,607 @@
+Last login: Sat Feb  6 08:22:09 on console
+~> R
+
+R version 3.2.2 (2015-08-14) -- "Fire Safety"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.0.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> save.image("global.RData")
+> load.image("global_anal.RData")
+Error: could not find function "load.image"
+> load("global_anal.RData")
+> ls
+function (name, pos = -1L, envir = as.environment(pos), all.names = FALSE,
+    pattern, sorted = TRUE)
+{
+    if (!missing(name)) {
+        pos <- tryCatch(name, error = function(e) e)
+        if (inherits(pos, "error")) {
+            name <- substitute(name)
+            if (!is.character(name))
+                name <- deparse(name)
+            warning(gettextf("%s converted to character string",
+                sQuote(name)), domain = NA)
+            pos <- name
+        }
+    }
+    all.names <- .Internal(ls(envir, all.names, sorted))
+    if (!missing(pattern)) {
+        if ((ll <- length(grep("[", pattern, fixed = TRUE))) &&
+            ll != length(grep("]", pattern, fixed = TRUE))) {
+            if (pattern == "[") {
+                pattern <- "\\["
+                warning("replaced regular expression pattern '[' by  '\\\\['")
+            }
+            else if (length(grep("[^\\\\]\\[<-", pattern))) {
+                pattern <- sub("\\[<-", "\\\\\\[<-", pattern)
+                warning("replaced '[<-' by '\\\\[<-' in regular expression pattern")
+            }
+        }
+        grep(pattern, all.names, value = TRUE)
+    }
+    else all.names
+}
+<bytecode: 0x7f7fab17c110>
+<environment: namespace:base>
+> ls()
+ [1] "a1"     "a2"     "b1"     "b2"     "c1"     "c2"     "e1"     "e2"
+ [9] "fitted" "frame"  "lcon1"  "lcon2"  "mcon1"  "mcon2"  "n1"     "n2"
+[17] "sig"    "x"      "x1"     "x2"     "y"      "y1"     "y1_fit" "y2"
+[25] "y2_fit"
+c                     package:base                     R Documentation
+
+Combine Values into a Vector or List
+
+Description:
+
+     This is a generic function which combines its arguments.
+
+     The default method combines its arguments to form a vector.  All
+     arguments are coerced to a common type which is the type of the
+     returned value, and all attributes except names are removed.
+
+Usage:
+
+     c(..., recursive = FALSE)
+
+Arguments:
+
+     ...: objects to be concatenated.
+
+recursive: logical.  If ‘recursive = TRUE’, the function recursively
+          descends through lists (and pairlists) combining all their
+          elements into a vector.
+
+Details:
+
+     The output type is determined from the highest type of the
+     components in the hierarchy NULL < raw < logical < integer <
+     double < complex < character < list < expression.  Pairlists are
+     treated as lists, but non-vector components (such names and calls)
+     are treated as one-element lists which cannot be unlisted even if
+     ‘recursive = TRUE’.
+
+     ‘c’ is sometimes used for its side effect of removing attributes
+     except names, for example to turn an array into a vector.
+     ‘as.vector’ is a more intuitive way to do this, but also drops
+     names.  Note too that methods other than the default are not
+     required to do this (and they will almost certainly preserve a
+     class attribute).
+
+     This is a primitive function.
+
+Value:
+
+     ‘NULL’ or an expression or a vector of an appropriate mode.  (With
+     no arguments the value is ‘NULL’.)
+
+S4 methods:
+
+     This function is S4 generic, but with argument list ‘(x, ...,
+     recursive = FALSE)’.
+
+References:
+
+     Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) _The New S
+     Language_.  Wadsworth & Brooks/Cole.
+
+See Also:
+
+     ‘unlist’ and ‘as.vector’ to produce attribute-free vectors.
+
+Examples:
+
+     c(1,7:9)
+     c(1:5, 10.5, "next")
+
+> lcon1
+ [1] 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0
+> x
+ [1]  1  2  3  4  5  6  7  8  9 10  6  7  8  9 10 11 12 13 14
+> n1
+[1] 10
+> n2
+[1] 9
+> c(n1,n2)
+[1] 10  9
+> rep(1,3)
+[1] 1 1 1
+> rep((1,2),(2,3)0
+Error: unexpected ',' in "rep((1,"
+> rep((1,2),(2,3))
+Error: unexpected ',' in "rep((1,"
+> rep(c(1,2),c(2,3))
+[1] 1 1 2 2 2
+> a <- (1,2,3,4)
+Error: unexpected ',' in "a <- (1,"
+> a <- c(1,2,3,4)
+> a
+[1] 1 2 3 4
+> help(c)
+> help(cbind)
+> dir()
+ [1] "Applications"          "cho.RData"             "cho.RHistory"
+ [4] "Desktop"               "Documents"             "dotfiles"
+ [7] "Downloads"             "Dropbox"               "egfr_imgs"
+[10] "global_anal.RData"     "global_anal.RHist"     "global.RData"
+[13] "Google Drive"          "Gradwork"              "Library"
+[16] "LinuxFun"              "mix_sim.r"             "mixfit.R"
+[19] "mondim.RData"          "mondim.RHistory"       "Movies"
+[22] "Music"                 "nest.r"                "Pictures"
+[25] "Pike_09_F1_20K.csv"    "Pike_2009_Fig1_WT.csv" "pike_cell_calcs.RData"
+[28] "prismeqns.txt"         "Public"                "Simulations"
+[31] "tester.csv"            "thesis2.0"             "TrashTemp"
+[34] "virt_box"              "VirtualBox VMs"
+> Pike_2009_Fig1_WT <- read.csv("Pike_2009_Fig1_WT.csv")
+> Pike_2009_Fig1_WT
+       egf_20k   fsat_20k    egf_187k  fsat_187k   egf_1200k fsat_1200k
+1   0.01047354 0.01196172  0.01047354 0.01196172  0.01289008 0.01435407
+2   0.01740269 0.04306220  0.02268675 0.03588517  0.02856876 0.02631579
+3   0.03517688 0.06937799  0.02488004 0.03827751  0.05642917 0.05023923
+4   0.07715713 0.17942584  0.08074171 0.11722488  0.08851339 0.08612440
+5   0.14570358 0.30622010  0.12096332 0.16985646  0.13411866 0.12200957
+6   0.25078748 0.39473684  0.15963996 0.22727273  0.22555281 0.19856459
+7   0.41247314 0.54066986  0.25049706 0.29425837  0.36650347 0.29425837
+8   0.73584028 0.73444976  0.40241306 0.39952153  0.65334483 0.42344498
+9   1.06476644 0.77511962  0.74242680 0.50717703  1.00222798 0.52631579
+10  1.81308071 0.93062201  1.03899776 0.65071770  1.74563843 0.64354067
+11  2.56195621 0.91148325  1.81028171 0.79665072  2.49740305 0.69856459
+12  4.11317831 0.96411483  2.53027637 0.83253588  4.05302529 0.68660287
+13  6.08411964 0.91148325  3.96816165 0.85167464  8.30178546 0.86124402
+14  8.31714512 1.02153110  8.21361971 0.93540670 16.03933932 0.96889952
+15 12.31034055 1.02392345 12.59096770 0.97846890          NA         NA
+> length(Pike_2009_Fig1_WT[1])
+[1] 1
+> Pike_2009_Fig1_WT[1]
+       egf_20k
+1   0.01047354
+2   0.01740269
+3   0.03517688
+4   0.07715713
+5   0.14570358
+6   0.25078748
+7   0.41247314
+8   0.73584028
+9   1.06476644
+10  1.81308071
+11  2.56195621
+12  4.11317831
+13  6.08411964
+14  8.31714512
+15 12.31034055
+> pike_x1 <- Pike_2009_Fig1_WT[1]
+> length(pike_x1)
+[1] 1
+> typeof(pike_x1)
+[1] "list"
+> pike_x1 <- as.vector(Pike_2009_Fig1_WT$egf_20k)
+> typeof(pike_x1)
+[1] "double"
+> length(pike_x1)
+[1] 15
+> pike_x2 <- as.vector(Pike_2009_Fig1_WT$egf_187k)
+> pike_x3 <- as.vector(Pike_2009_Fig1_WT$egf_1200k)
+> length(pike_x3)
+[1] 15
+> pike_x3
+ [1]  0.01289008  0.02856876  0.05642917  0.08851339  0.13411866  0.22555281
+ [7]  0.36650347  0.65334483  1.00222798  1.74563843  2.49740305  4.05302529
+[13]  8.30178546 16.03933932          NA
+> na.omit(Pike_2009_Fig1_WT)
+      egf_20k   fsat_20k   egf_187k  fsat_187k   egf_1200k fsat_1200k
+1  0.01047354 0.01196172 0.01047354 0.01196172  0.01289008 0.01435407
+2  0.01740269 0.04306220 0.02268675 0.03588517  0.02856876 0.02631579
+3  0.03517688 0.06937799 0.02488004 0.03827751  0.05642917 0.05023923
+4  0.07715713 0.17942584 0.08074171 0.11722488  0.08851339 0.08612440
+5  0.14570358 0.30622010 0.12096332 0.16985646  0.13411866 0.12200957
+6  0.25078748 0.39473684 0.15963996 0.22727273  0.22555281 0.19856459
+7  0.41247314 0.54066986 0.25049706 0.29425837  0.36650347 0.29425837
+8  0.73584028 0.73444976 0.40241306 0.39952153  0.65334483 0.42344498
+9  1.06476644 0.77511962 0.74242680 0.50717703  1.00222798 0.52631579
+10 1.81308071 0.93062201 1.03899776 0.65071770  1.74563843 0.64354067
+11 2.56195621 0.91148325 1.81028171 0.79665072  2.49740305 0.69856459
+12 4.11317831 0.96411483 2.53027637 0.83253588  4.05302529 0.68660287
+13 6.08411964 0.91148325 3.96816165 0.85167464  8.30178546 0.86124402
+14 8.31714512 1.02153110 8.21361971 0.93540670 16.03933932 0.96889952
+> na.omit(pike_x3)
+ [1]  0.01289008  0.02856876  0.05642917  0.08851339  0.13411866  0.22555281
+ [7]  0.36650347  0.65334483  1.00222798  1.74563843  2.49740305  4.05302529
+[13]  8.30178546 16.03933932
+attr(,"na.action")
+[1] 15
+attr(,"class")
+[1] "omit"
+> pike_x3 <- na.omit(pike_x3)
+> length(pike_x3)
+[1] 14
+> pike_y1 <- as.vector(Pike_2009_Fig1_WT$fsat_20k)
+> pike_y2 <- as.vector(Pike_2009_Fig1_WT$fsat_187k)
+> pike_y3 <- as.vector(Pike_2009_Fig1_WT$fsat_1200k)
+> pike_y3
+ [1] 0.01435407 0.02631579 0.05023923 0.08612440 0.12200957 0.19856459
+ [7] 0.29425837 0.42344498 0.52631579 0.64354067 0.69856459 0.68660287
+[13] 0.86124402 0.96889952         NA
+> pike_y3 <- na.omit(as.vector(Pike_2009_Fig1_WT$fsat_1200k))
+> pike_y3
+ [1] 0.01435407 0.02631579 0.05023923 0.08612440 0.12200957 0.19856459
+ [7] 0.29425837 0.42344498 0.52631579 0.64354067 0.69856459 0.68660287
+[13] 0.86124402 0.96889952
+attr(,"na.action")
+[1] 15
+attr(,"class")
+[1] "omit"
+> pike_y3 <- as.vector(Pike_2009_Fig1_WT$fsat_1200k)
+> pike_y3 <- na.omit(pike_y3)
+> pike_y3
+ [1] 0.01435407 0.02631579 0.05023923 0.08612440 0.12200957 0.19856459
+ [7] 0.29425837 0.42344498 0.52631579 0.64354067 0.69856459 0.68660287
+[13] 0.86124402 0.96889952
+attr(,"na.action")
+[1] 15
+attr(,"class")
+[1] "omit"
+> pike_y3 <- as.vector(Pike_2009_Fig1_WT$fsat_1200k)
+> pike_y3
+ [1] 0.01435407 0.02631579 0.05023923 0.08612440 0.12200957 0.19856459
+ [7] 0.29425837 0.42344498 0.52631579 0.64354067 0.69856459 0.68660287
+[13] 0.86124402 0.96889952         NA
+> pike_x3
+ [1]  0.01289008  0.02856876  0.05642917  0.08851339  0.13411866  0.22555281
+ [7]  0.36650347  0.65334483  1.00222798  1.74563843  2.49740305  4.05302529
+[13]  8.30178546 16.03933932
+attr(,"na.action")
+[1] 15
+attr(,"class")
+[1] "omit"
+> pike_x3 <- as.vector(Pike_2009_Fig1_WT$egf_1200k)
+> pike_x3[1:12]
+ [1] 0.01289008 0.02856876 0.05642917 0.08851339 0.13411866 0.22555281
+ [7] 0.36650347 0.65334483 1.00222798 1.74563843 2.49740305 4.05302529
+> pike_x3[1:14]
+ [1]  0.01289008  0.02856876  0.05642917  0.08851339  0.13411866  0.22555281
+ [7]  0.36650347  0.65334483  1.00222798  1.74563843  2.49740305  4.05302529
+[13]  8.30178546 16.03933932
+> pike_x3 <- pike_x3[1:14]
+> pike_y3 <- pike_y3[1:14]
+> p1 <- length(pike_x1)
+> p2 <- length(pike_x2)
+> p3 <- length(pike_x3)
+> pike_y <- c(pike_y1, pike_y2, pike_y3)
+> pike_y
+ [1] 0.01196172 0.04306220 0.06937799 0.17942584 0.30622010 0.39473684
+ [7] 0.54066986 0.73444976 0.77511962 0.93062201 0.91148325 0.96411483
+[13] 0.91148325 1.02153110 1.02392345 0.01196172 0.03588517 0.03827751
+[19] 0.11722488 0.16985646 0.22727273 0.29425837 0.39952153 0.50717703
+[25] 0.65071770 0.79665072 0.83253588 0.85167464 0.93540670 0.97846890
+[31] 0.01435407 0.02631579 0.05023923 0.08612440 0.12200957 0.19856459
+[37] 0.29425837 0.42344498 0.52631579 0.64354067 0.69856459 0.68660287
+[43] 0.86124402 0.96889952
+> pike_x <- c(pike_x1, pike_x2, pike_x3)
+> pike_x
+ [1]  0.01047354  0.01740269  0.03517688  0.07715713  0.14570358  0.25078748
+ [7]  0.41247314  0.73584028  1.06476644  1.81308071  2.56195621  4.11317831
+[13]  6.08411964  8.31714512 12.31034055  0.01047354  0.02268675  0.02488004
+[19]  0.08074171  0.12096332  0.15963996  0.25049706  0.40241306  0.74242680
+[25]  1.03899776  1.81028171  2.53027637  3.96816165  8.21361971 12.59096770
+[31]  0.01289008  0.02856876  0.05642917  0.08851339  0.13411866  0.22555281
+[37]  0.36650347  0.65334483  1.00222798  1.74563843  2.49740305  4.05302529
+[43]  8.30178546 16.03933932
+> sel1 <- rep(c(1,0,0), c(p1,p2,p3))
+> sel1
+ [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[39] 0 0 0 0 0 0
+> sel2 <- rep(c(0,1,0), c(p1,p2,p3))
+> sel3 <- rep(c(0,0,1), c(p1,p2,p3))
+> sel3
+ [1] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1
+[39] 1 1 1 1 1 1
+> sel2
+ [1] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0
+[39] 0 0 0 0 0 0
+> library()
+> library(minpack.lm)
+> nlsLM
+function (formula, data = parent.frame(), start, jac = NULL,
+    algorithm = "LM", control = nls.lm.control(), lower = NULL,
+    upper = NULL, trace = FALSE, subset, weights, na.action,
+    model = FALSE, ...)
+{
+    formula <- as.formula(formula)
+    if (!is.list(data) && !is.environment(data))
+        stop("'data' must be a list or an environment")
+    mf <- match.call()
+    varNames <- all.vars(formula)
+    if (length(formula) == 2L) {
+        formula[[3L]] <- formula[[2L]]
+        formula[[2L]] <- 0
+    }
+    form2 <- formula
+    form2[[2L]] <- 0
+    varNamesRHS <- all.vars(form2)
+    mWeights <- missing(weights)
+    if (trace)
+        control$nprint <- 1
+    pnames <- if (missing(start)) {
+        if (!is.null(attr(data, "parameters"))) {
+            names(attr(data, "parameters"))
+        }
+        else {
+            cll <- formula[[length(formula)]]
+            func <- get(as.character(cll[[1L]]))
+            if (!is.null(pn <- attr(func, "pnames")))
+                as.character(as.list(match.call(func, call = cll))[-1L][pn])
+        }
+    }
+    else names(start)
+    env <- environment(formula)
+    if (is.null(env))
+        env <- parent.frame()
+    if (length(pnames))
+        varNames <- varNames[is.na(match(varNames, pnames))]
+    lenVar <- function(var) tryCatch(length(eval(as.name(var),
+        data, env)), error = function(e) -1)
+    if (length(varNames)) {
+        n <- sapply(varNames, lenVar)
+        if (any(not.there <- n == -1)) {
+            nnn <- names(n[not.there])
+            if (missing(start)) {
+                warning("No starting values specified for some parameters.\n",
+                  "Initializing ", paste(sQuote(nnn), collapse = ", "),
+                  " to '1.'.\n", "Consider specifying 'start' or using a selfStart model")
+                start <- as.list(rep(1, length(nnn)))
+                names(start) <- nnn
+                varNames <- varNames[i <- is.na(match(varNames,
+                  nnn))]
+                n <- n[i]
+            }
+            else stop("parameters without starting value in 'data': ",
+                paste(nnn, collapse = ", "))
+        }
+    }
+    else {
+        if (length(pnames) && any((np <- sapply(pnames, lenVar)) ==
+            -1)) {
+            message("fitting parameters ", paste(sQuote(pnames[np ==
+                -1]), collapse = ", "), " without any variables")
+            n <- integer()
+        }
+        else stop("no parameters to fit")
+    }
+    respLength <- length(eval(formula[[2L]], data, env))
+    if (length(n) > 0L) {
+        varIndex <- n%%respLength == 0
+        if (is.list(data) && diff(range(n[names(n) %in% names(data)])) >
+            0) {
+            mf <- data
+            if (!missing(subset))
+                warning("argument 'subset' will be ignored")
+            if (!missing(na.action))
+                warning("argument 'na.action' will be ignored")
+            if (missing(start))
+                start <- getInitial(formula, mf)
+            startEnv <- new.env(hash = FALSE, parent = environment(formula))
+            for (i in names(start)) assign(i, start[[i]], envir = startEnv)
+            rhs <- eval(formula[[3L]], data, startEnv)
+            n <- NROW(rhs)
+            wts <- if (mWeights)
+                rep(1, n)
+            else eval(substitute(weights), data, environment(formula))
+        }
+        else {
+            mf$formula <- as.formula(paste("~", paste(varNames[varIndex],
+                collapse = "+")), env = environment(formula))
+            mf$start <- mf$control <- mf$algorithm <- mf$trace <- mf$model <- NULL
+            mf$lower <- mf$upper <- NULL
+            mf[[1L]] <- as.name("model.frame")
+            mf <- eval.parent(mf)
+            n <- nrow(mf)
+            mf <- as.list(mf)
+            wts <- if (!mWeights)
+                model.weights(mf)
+            else rep(1, n)
+        }
+        if (any(wts < 0 | is.na(wts)))
+            stop("missing or negative weights not allowed")
+    }
+    else {
+        varIndex <- logical()
+        mf <- list(0)
+        wts <- numeric()
+    }
+    if (missing(start))
+        start <- getInitial(formula, mf)
+    for (var in varNames[!varIndex]) mf[[var]] <- eval(as.name(var),
+        data, env)
+    varNamesRHS <- varNamesRHS[varNamesRHS %in% varNames[varIndex]]
+    mf <- c(mf, start)
+    lhs <- eval(formula[[2L]], envir = mf)
+    m <- match(names(start), names(mf))
+    .swts <- if (!missing(wts) && length(wts))
+        sqrt(wts)
+    FCT <- function(par) {
+        mf[m] <- par
+        rhs <- eval(formula[[3L]], envir = mf, environment(formula))
+        res <- lhs - rhs
+        res <- .swts * res
+        res
+    }
+    NLS <- nls.lm(par = start, fn = FCT, jac = jac, control = control,
+        lower = lower, upper = upper, ...)
+    start <- NLS$par
+    m <- nlsModel(formula, mf, start, wts)
+    if (NLS$info %in% c(1, 2, 3, 4))
+        isConv <- TRUE
+    else isConv <- FALSE
+    finIter <- NLS$niter
+    finTol <- nls.lm.control()$ftol
+    convInfo <- list(isConv = isConv, finIter = finIter, finTol = finTol,
+        stopCode = NLS$info, stopMessage = NLS$message)
+    nls.out <- list(m = m, convInfo = convInfo, data = substitute(data),
+        call = match.call())
+    nls.out$call$algorithm <- algorithm
+    nls.out$call$control <- nls.control()
+    nls.out$call$trace <- FALSE
+    nls.out$na.action <- attr(mf, "na.action")
+    nls.out$dataClasses <- attr(attr(mf, "terms"), "dataClasses")[varNamesRHS]
+    if (model)
+        nls.out$model <- mf
+    if (!mWeights)
+        nls.out$weights <- wts
+    nls.out$control <- control
+    class(nls.out) <- "nls"
+    nls.out
+}
+<environment: namespace:minpack.lm>
+> nlsLM()
+Error in as.formula(formula) :
+  argument "formula" is missing, with no default
+> help(nlsLM)
+> f1 <- 0.0007
+> f2 <- 0.007
+> f3 <- 0.07
+> help(function)
+Error: unexpected ')' in "help(function)"
+> help(function())
+Error: unexpected ')' in "help(function())"
+> Rfunc
+Error: object 'Rfunc' not found
+> R
+Error: object 'R' not found
+> R <- function(a, x, c, d, e) R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+> R
+function(a, x, c, d, e) R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+> Ysat <- function(a, x, c, d, e, R) (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+> R <- function(a, x, c, d, e)(a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+> R
+function(a, x, c, d, e)(a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+> pike_x
+ [1]  0.01047354  0.01740269  0.03517688  0.07715713  0.14570358  0.25078748
+ [7]  0.41247314  0.73584028  1.06476644  1.81308071  2.56195621  4.11317831
+[13]  6.08411964  8.31714512 12.31034055  0.01047354  0.02268675  0.02488004
+[19]  0.08074171  0.12096332  0.15963996  0.25049706  0.40241306  0.74242680
+[25]  1.03899776  1.81028171  2.53027637  3.96816165  8.21361971 12.59096770
+[31]  0.01289008  0.02856876  0.05642917  0.08851339  0.13411866  0.22555281
+[37]  0.36650347  0.65334483  1.00222798  1.74563843  2.49740305  4.05302529
+[43]  8.30178546 16.03933932
+> x <- pike_x
+> R(1,x,2,3,4)
+Error in c * R : non-numeric argument to binary operator
+> R
+function(a, x, c, d, e)(a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+> R <- (-1 - a*x + sqrt(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+Error in 8 * c : non-numeric argument to binary operator
+> R <-function(a,x,c,d,e) (-1 - a*x + sqrt(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+> R
+function(a,x,c,d,e) (-1 - a*x + sqrt(1 + 2*a*x + (a^2)*(x^2) + 8*c*(f1*sel1 + f2*sel2 + f3*sel3) + 8*c*d*(f1*sel1 + f2*sel2 + f3*sel3) + 8*(x^2)*c*d*e*(f1*sel1 + f2*sel2 + f3*sel3)))/(4*(c + c*d + (x^2)*c*d*e))
+> R(1,x,2,3,4)
+ [1] 6.853057e-04 6.807323e-04 6.692641e-04 6.435961e-04 6.055315e-04
+ [6] 5.549643e-04 4.914523e-04 3.994040e-04 3.351896e-04 2.451254e-04
+[11] 1.930572e-04 1.339935e-04 9.645794e-05 7.321099e-05 5.115731e-05
+[16] 6.298983e-03 6.235478e-03 6.224151e-03 5.943778e-03 5.751706e-03
+[21] 5.574776e-03 5.188489e-03 4.628280e-03 3.686273e-03 3.111132e-03
+[26] 2.194009e-03 1.713846e-03 1.189252e-03 6.227623e-04 4.173291e-04
+[31] 4.166864e-02 4.136891e-02 4.080380e-02 4.010739e-02 3.904902e-02
+[36] 3.677089e-02 3.316130e-02 2.665636e-02 2.092220e-02 1.396657e-02
+[41] 1.035179e-02 6.701950e-03 3.398334e-03 1.788082e-03
+> Ysat
+function(a, x, c, d, e, R) (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+> pike_y
+ [1] 0.01196172 0.04306220 0.06937799 0.17942584 0.30622010 0.39473684
+ [7] 0.54066986 0.73444976 0.77511962 0.93062201 0.91148325 0.96411483
+[13] 0.91148325 1.02153110 1.02392345 0.01196172 0.03588517 0.03827751
+[19] 0.11722488 0.16985646 0.22727273 0.29425837 0.39952153 0.50717703
+[25] 0.65071770 0.79665072 0.83253588 0.85167464 0.93540670 0.97846890
+[31] 0.01435407 0.02631579 0.05023923 0.08612440 0.12200957 0.19856459
+[37] 0.29425837 0.42344498 0.52631579 0.64354067 0.69856459 0.68660287
+[43] 0.86124402 0.96889952
+> test <- nlsLM(pike_y ~ Ysat(a,x,c,d,e,R), start=list(a=5,c=100,d=1,e=0.1), trace=T)
+Error in c * R : non-numeric argument to binary operator
+> Ysat
+function(a, x, c, d, e, R) (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+> Ysat(1,x,2,3,4,R(1,x,2,3,4))
+ [1] 0.01038208 0.01713618 0.03405769 0.07185394 0.12771769 0.20161370
+ [7] 0.29397372 0.42709125 0.51955021 0.64883776 0.72344857 0.80802911
+[13] 0.86177665 0.89507069 0.92666424 0.01051867 0.02257268 0.02471347
+[19] 0.07686213 0.11171054 0.14323307 0.21030939 0.30391272 0.45369939
+[25] 0.54169821 0.67850001 0.74904970 0.82574223 0.90852064 0.93861486
+[31] 0.01386200 0.03081429 0.06101337 0.09558700 0.14367347 0.23375093
+[37] 0.35142830 0.51846591 0.63855422 0.76597923 0.82779209 0.88870362
+[43] 0.94339294 0.97012397
+>
+> yvaltest <- Ysat(1,x,2,3,4,R(1,x,2,3,4))
+> plot(x,yvaltest)
+> test <- nlsLM(pike_y ~ Ysat(a,x,c,d,e,R(a,x,c,d,e)), start=list(a=5,c=100,d=1,e=0.1), trace=T)
+It.    0, RSS =   0.416256, Par. =          5        100          1        0.1
+It.    1, RSS =   0.244618, Par. =    4.63238    125.029   0.965427    -0.1376
+It.    2, RSS =  0.0790923, Par. =    3.78359    169.613    0.93679  -0.134881
+It.    3, RSS =  0.0487537, Par. =    3.32198    242.274    1.37603   0.209118
+It.    4, RSS =  0.0483609, Par. =    3.96401    581.856    1.64745   0.314286
+It.    5, RSS =  0.0380624, Par. =    4.07957    774.357    1.41345   0.254108
+It.    6, RSS =  0.0379281, Par. =     4.2939    955.266    1.44575   0.265319
+It.    7, RSS =  0.0379077, Par. =    4.30054    970.985    1.42829   0.266484
+It.    8, RSS =  0.0379075, Par. =    4.31052    980.533    1.43037   0.267078
+It.    9, RSS =  0.0379075, Par. =    4.30971     979.73    1.42952   0.267161
+It.   10, RSS =  0.0379075, Par. =    4.31035    980.395    1.42976   0.267201
+It.   11, RSS =  0.0379075, Par. =    4.31024    980.283    1.42968   0.267204
+Warning message:
+In sqrt(1 + 2 * a * x + (a^2) * (x^2) + 8 * c * (f1 * sel1 + f2 *  :
+  NaNs produced
+> sqrt(4)
+[1] 2
+> save.history("global_anal.RHist")
+Error: could not find function "save.history"
+> savehistory("global_anal.RHist")
+> save.image("global_anal.RData")
+> summary(test)
+
+Formula: pike_y ~ Ysat(a, x, c, d, e, R(a, x, c, d, e))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)
+a   4.31024    0.67472   6.388 1.35e-07 ***
+c 980.28333  621.60789   1.577 0.122670
+d   1.42968    0.22508   6.352 1.51e-07 ***
+e   0.26720    0.06334   4.218 0.000137 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03078 on 40 degrees of freedom
+
+Number of iterations to convergence: 11
+Achieved convergence tolerance: 1.49e-08
+
+>

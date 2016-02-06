@@ -1,0 +1,38 @@
+<A>logEC50=logEC50A
+<B>Effect1 = MeanEffect + Rand1
+<B>logEC50=logEC50A + Effect1
+
+<C>logEC50=logEC50C
+<D>Effect2 = MeanEffect + Rand2
+<D>logEC50=logEC50C + Effect2
+
+<E>logEC50=logEC50E
+<F>Effect3 = MeanEffect - Rand1 - Rand2
+<F>logEC50=logEC50E + Effect3
+
+Y=100/(1+10^(LogEC50-X))
+
+
+————— NEW EQN ——————
+
+R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*f + 8*c*d*f + 8*(x^2)*c*d*e*f))/(4*(c + c*d + (x^2)*c*d*e))
+
+Y = (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+
+
+———- NEW EQN ——————
+
+K11=4.2
+L20=8600
+K21=2.0
+K22=0.19
+
+
+
+
+Y=((K11*X + L20*R*K21*X*(1 + 2*K22*X))/((1 + K11*X) + 2*L20*R*(1 + K21*X*(1 + K22*X))))
+
+
+—— EQN for R ——
+
+R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*f + 8*c*d*f + 8*(x^2)*c*d*e*f))/(4*(c + c*d + (x^2)*c*d*e))
