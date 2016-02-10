@@ -36,3 +36,70 @@ Y=((K11*X + L20*R*K21*X*(1 + 2*K22*X))/((1 + K11*X) + 2*L20*R*(1 + K21*X*(1 + K2
 —— EQN for R ——
 
 R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*f + 8*c*d*f + 8*(x^2)*c*d*e*f))/(4*(c + c*d + (x^2)*c*d*e))
+
+— Usr defined by me in demo version —
+
+Pike (nm scale version changes magnitude of K’s to those in paper):
+
+K11=4.2
+L20=860
+K21=2.0
+K22=0.19
+
+Y=((K11*X + L20*R*K21*X*(1 + 2*K22*X))/((1 + K11*X) + 2*L20*R*(1 + K21*X*(1 + K22*X))))
+
+####
+
+Klotz1:
+
+Y= (x*kd)/(1 + x*kd)
+
+####
+
+Find Total Receptor Conc:
+
+a=4.2
+c=860
+d=2.0
+e=0.19
+
+R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*f + 8*c*d*f + 8*(x^2)*c*d*e*f))/(4*(c + c*d + (x^2)*c*d*e))
+
+Y = (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+
+This finds R0 from Pike by reverse fitting data using calculated equilibrium constants
+
+####
+
+Pike_FindR0_scaled-to-nm:
+
+a=4.2e9
+c=8.6e11
+d=2.0e9
+e=1.9e8
+
+R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*f + 8*c*d*f + 8*(x^2)*c*d*e*f))/(4*(c + c*d + (x^2)*c*d*e))
+
+####
+
+mix model:
+
+Y= (m*((x*k1)/(1 + x*k1)) + (1 - m)*((x*k2)/(1 + x*k2)))
+
+####
+
+Pike_09_rec-conc-given (uses back-calculated total receptor conc — this is how it was prob done)
+
+<A>f=0.0007
+<B>f=0.007
+<C>f=0.07
+
+R = (-1 - a*x + SQRT(1 + 2*a*x + (a^2)*(x^2) + 8*c*f + 8*c*d*f + 8*(x^2)*c*d*e*f))/(4*(c + c*d + (x^2)*c*d*e))
+
+Y = (a*x + c*R*d*x*(1 + 2*e*x))/((1 + a*x) + 2*c*R*(1 + d*x*(1 + e*x)))
+
+####
+
+
+
+
