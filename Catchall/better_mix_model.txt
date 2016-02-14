@@ -1,0 +1,18 @@
+
+
+e1 = (x*k1)/(1 + x*k1)
+
+e2 = (x*k2)/(1 + x*k2)
+
+m = 2*(1/8)*(1/f)*(v + 4*f - (sqrt(v)*sqrt(v + 8*f)))
+
+Y = (1-m)*e1 + (m)*e2
+
+——fitted R0 (total receptor values) for Pike08 WT
+
+<A>f=0.001645
+<B>f=0.003046
+<C>f=0.003734
+<D>f=0.003191
+<E>f=0.01435
+<F>f=0.02964
