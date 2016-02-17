@@ -1,0 +1,33 @@
+Define variables
+
+x1 = L, free ligand
+x2 = M, free receptor
+x3, ML, singly occupied receptor
+x4, MLL, doubly occupied receptor
+
+Define conservation of mass relationship
+
+x2 + x3 + x4 = Mtotal (total receptor — KNOWN)
+
+x1 + x3 + 2*x4 = Ltotal (total ligand - KNOWN)
+
+Define Equilibrium equations
+
+x3 = k1*x1*x2
+
+x4 = k2*x1*x3
+
+Create system with fixed parameters Mtotal, k1, k2. The function below will create this, but it must be recreated when parameters change. This will lead to a final function that only depends on Ltotal
+
+pars[a_,b_,c_]:= {Subscript[m, t]-> a, Subscript[k, 1]->b, Subscript[k, 2]->c}
+
+sys[a_,b_,c_]:= Join[cons,equ]/.pars[a,b,c] 
+
+combines total system with fixed params — still depends on Ltot
+
+{Subscript[x, 2] + Subscript[x, 3] + Subscript[x, 4] == 0.1, 
+ Subscript[x, 1] + Subscript[x, 3] + 2 Subscript[x, 4] == Subscript[l,
+   t], Subscript[x, 3] == 4.1 Subscript[x, 1] Subscript[x, 2], 
+ Subscript[x, 4] == 0.3 Subscript[x, 1] Subscript[x, 3]}
+
+THIS IS A FIXED ENTITY AND WILL BE USED IN SUBSEQUENT FUNCTIONS
