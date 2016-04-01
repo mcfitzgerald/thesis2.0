@@ -1,0 +1,66 @@
+%\RequirePackage{fix-cm}
+\documentclass[12pt, titlepage]{article}
+\usepackage[toc,page]{appendix}
+\usepackage{blindtext}
+%\usepackage{microtype}
+%\usepackage{lettrine}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,positioning}
+\frenchspacing
+\begin{document}
+
+\title{\textbf{\huge{Cooperativity in Dimerizing Systems}} \\ ghric}
+%\subtitle{Application of Theory to Epidermal Growth Factor Receptor and Estrogen Receptor}
+\author{Michael C. Fitzgerald}
+\date{May 2016}
+\maketitle
+
+\begin{abstract}
+%\lettrine{B}{y eight o'clock everything was ready}
+By eight o'clock everything was ready, and we were on the other side of
+the river.  We jumped into the stage, the driver cracked his whip, and we
+bowled away and left ``the States" behind us.  It was a superb summer
+morning, and all the landscape was brilliant with sunshine.  There was a
+freshness and breeziness, too, and an exhilarating sense of emancipation
+from all sorts of cares and responsibilities, that almost made us feel
+that the years we had spent in the close, hot city, toiling and slaving,
+had been wasted and thrown away.  We were spinning along through Kansas,
+and in the course of an hour and a half we were fairly abroad on the
+great Plains.  Just here the land was rolling--a grand sweep of regular
+elevations and depressions as far as the eye could reach--like the
+stately heave and swell of the ocean's bosom after a storm.  And
+everywhere were cornfields, accenting with squares of deeper green, this
+limitless expanse of grassy land.  But presently this sea upon dry ground
+was to lose its ``rolling" character and stretch away for seven hundred
+miles as level as a floor!
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\blindmathtrue
+\blindtext[5]
+
+%\part{Derivations}
+%klrk
+
+\section{Models}
+\blindtext[5]
+
+\begin{figure}%[h]
+\centering
+\input{diag.tex}
+\caption{this is a nugget model}
+\end{figure}
+
+\blindtext[5]
+
+\clearpage
+\begin{appendices}
+\section{Prism Code}
+\end{appendices}
+
+
+\end{document}

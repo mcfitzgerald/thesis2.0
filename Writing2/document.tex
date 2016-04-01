@@ -1,0 +1,45 @@
+\RequirePackage{fix-cm}
+\documentclass[11pt]{report}
+\usepackage{microtype}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{fancyvrb}
+\usepackage{lettrine}
+\frenchspacing
+\numberwithin{equation}{chapter}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \textbf{\Huge{Thesis Title}}
+        
+        \vspace{0.5cm}
+        Thesis Subtitle
+        
+        \vspace{1.5cm}
+        
+        \textbf{Author Name}
+        
+        \vfill
+        
+        A thesis presented for the degree of\\
+        Doctor of Philosophy
+        
+        \vspace{0.8cm}
+        
+        Department Name\\
+        University Name\\
+        Country\\
+        Date
+        
+    \end{center}
+\end{titlepage}
+
+\input{./tex/chapter_1}
+\input{./tex/chapter_2}
+\end{document}
