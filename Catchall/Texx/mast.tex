@@ -1,16 +1,22 @@
 %\RequirePackage{fix-cm}
 \documentclass[12pt, titlepage]{article}
-\usepackage[toc,page]{appendix}
+\usepackage[title, titletoc]{appendix}
+\usepackage{amssymb,amsmath}
+\usepackage[backend=bibtex, style=nature, citestyle=nature, maxbibnames=2, isbn=false, date=year]{biblatex}
 \usepackage{blindtext}
-%\usepackage{microtype}
+\usepackage{microtype}
 %\usepackage{lettrine}
 \usepackage{tikz}
 \usetikzlibrary{matrix,arrows,positioning}
+\usepackage{graphicx}
+
 \frenchspacing
+
+\addbibresource{Bibz.bib}
+
 \begin{document}
 
-\title{\textbf{\huge{Cooperativity in Dimerizing Systems}} \\ ghric}
-%\subtitle{Application of Theory to Epidermal Growth Factor Receptor and Estrogen Receptor}
+\title{\textbf{\LARGE{Cooperativity in Dimerizing Systems}} \\[0.5em] \normalsize{Comparison of Epidermal Growth Factor an Estrogen Receptors}}
 \author{Michael C. Fitzgerald}
 \date{May 2016}
 \maketitle
@@ -35,24 +41,36 @@ was to lose its ``rolling" character and stretch away for seven hundred
 miles as level as a floor!
 \end{abstract}
 
-\newpage
-\tableofcontents
-\newpage
+\pagestyle{empty} %get rid of header/footer for toc page
+\tableofcontents %put toc in
+\clearpage %start new page
+\pagestyle{plain} % put headers/footers back on
+\setcounter{page}{1} %reset the page counter
+
+%\newpage
+%\tableofcontents
+%\newpage
 
 \section{Introduction}
 \blindmathtrue
-\blindtext[5]
+\blindtext[2]
+\begin{figure}
+\centering
+\includegraphics{grph4.pdf}
+\caption{this is a nooj mode. Alkj fa lkj sdflkj dlkj;lkj akj fj kjkje alkjd flkjd lkjalksdf lkjdljadn lkc alkdlakjd nlja;lkj ff f fffff fookf l}
+\end{figure}
 
 %\part{Derivations}
 %klrk
 
 \section{Models}
 \blindtext[5]
+\\ The lazy brown dog jumped over the office chairs fulfilling the prophecy.\supercite{notides_positive_1981, brandt_cooperativity_1997}
 
 \begin{figure}%[h]
 \centering
 \input{diag.tex}
-\caption{this is a nugget model}
+\caption{this is a nugget model proposed by Wyman and Gill \supercite{wyman_binding_1990}}
 \end{figure}
 
 \blindtext[5]
@@ -60,7 +78,12 @@ miles as level as a floor!
 \clearpage
 \begin{appendices}
 \section{Prism Code}
+\blindtext[5]
+\section{R Code}
+\blindtext[5]
 \end{appendices}
 
+\clearpage
+\printbibliography
 
 \end{document}
