@@ -1,0 +1,209 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{notides_positive_1981}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Notides}{N.}%
+     {A.~C.}{A.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lerner}{L.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hamilton}{H.}%
+     {D.~E.}{D.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NAC+1}
+  \strng{fullhash}{NACLNHDE1}
+  \field{abstract}{%
+  The equilibrium [3H]estradiol binding by the partially purified estrogen
+  receptor from calf uteri was measured at 25 degrees C. The Scatchard plot of
+  the binding data showed a convex curve characteristic of positive
+  cooperativity and a Hill coefficient of 1.58 +/- 0.21, at receptor
+  concentrations of 1 to 10 {nM}. Below a receptor concentration of
+  approximately 0.3 {nM} the Scatchard plot approached linearity, suggesting
+  that the cooperative interactions are dependent upon a monomer--dimer
+  equilibrium. Trypsin pretreatment of the receptor resulted in a loss of dimer
+  formation and of the cooperative interactions. The positive cooperative
+  characteristics of the estrogen receptor were shown not to be produced by
+  receptor inactivation, failure to complete the [3H]estradiol--receptor
+  equilibrium reaction, or radioimpurity of the [3H]estradiol. These findings
+  indicate that the activated 5S estrogen receptor is a homodimer and that its
+  formation is associated with a positive cooperative estradiol-binding
+  reaction.%
+  }
+  \field{issn}{0027-8424, 1091-6490}
+  \field{number}{8}
+  \field{pages}{4926\bibrangedash 4930}
+  \field{title}{Positive cooperativity of the estrogen receptor}
+  \verb{url}
+  \verb http://www.pnas.org/content/78/8/4926
+  \endverb
+  \field{volume}{78}
+  \field{langid}{english}
+  \verb{file}
+  \verb Notides et al. - 1981 - Positive cooperativity of the estrogen receptor
+  \verb .pdf:/Users/michael/Documents/References/storage/2VVCJEDI/Notides et al
+  \verb . - 1981 - Positive cooperativity of the estrogen receptor.pdf:applicat
+  \verb ion/pdf
+  \endverb
+  \field{journaltitle}{{PNAS}}
+  \field{day}{01}
+  \field{month}{08}
+  \field{year}{1981}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2016}
+\endentry
+
+\entry{brandt_cooperativity_1997}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Brandt}{B.}%
+     {Mark~E.}{M.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vickery}{V.}%
+     {Larry~E.}{L.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BMEVLE1}
+  \strng{fullhash}{BMEVLE1}
+  \field{abstract}{%
+  The estrogen receptor dimerizes and exhibits cooperative ligand binding as
+  part of its normal functioning. Interaction of the estrogen receptor with its
+  ligands is mediated by a C-terminal hormone-binding domain ({HBD}), and
+  residues within the {HBD} are thought to contribute to dimerization. To
+  examine dimer interactions in the isolated {HBD}, a human estrogen receptor
+  {HBD} fragment was expressed in high yield as a cleavable fusion protein in
+  Escherichia coli. The isolated {HBD} peptide exhibited affinity for
+  estradiol, ligand discrimination, and cooperative estradiol binding (Hill
+  coefficient ∼1.6) similar to the full-length protein. Circular dichroism
+  spectroscopy suggests that the {HBD} contains significant amounts of α-helix
+  (∼60\%) and some β-strand (∼7\%) and that ligand binding induces little
+  change in secondary structure. {HBD} dimer dissociation, measured using size
+  exclusion chromatography, exhibited a half-life of ∼1.2 h, which ligand
+  binding increased ∼3-fold (estradiol) to ∼4-fold (4-hydroxytamoxifen).
+  These results suggest that the isolated estrogen receptor {HBD} dimerizes and
+  undergoes conformational changes associated with cooperative ligand binding
+  in a manner comparable to the full-length protein, and that one effect of
+  ligand binding is to alter the receptor dimer dissociation kinetics.%
+  }
+  \verb{doi}
+  \verb 10.1074/jbc.272.8.4843
+  \endverb
+  \field{issn}{0021-9258, 1083-351X}
+  \field{number}{8}
+  \field{pages}{4843\bibrangedash 4849}
+  \field{title}{Cooperativity and Dimerization of Recombinant Human Estrogen
+  Receptor Hormone-binding Domain}
+  \verb{url}
+  \verb http://www.jbc.org/content/272/8/4843
+  \endverb
+  \field{volume}{272}
+  \field{langid}{english}
+  \verb{file}
+  \verb Brandt and Vickery - 1997 - Cooperativity and Dimerization of Recombina
+  \verb nt Huma.pdf:/Users/michael/Documents/References/storage/NFGCUKIR/Brandt
+  \verb  and Vickery - 1997 - Cooperativity and Dimerization of Recombinant Hum
+  \verb a.pdf:application/pdf
+  \endverb
+  \field{journaltitle}{J. Biol. Chem.}
+  \field{day}{21}
+  \field{month}{02}
+  \field{year}{1997}
+  \field{urlday}{15}
+  \field{urlmonth}{03}
+  \field{urlyear}{2016}
+\endentry
+
+\entry{wyman_binding_1990}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wyman}{W.}%
+     {Jeffries}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gill}{G.}%
+     {Stanley~J.}{S.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {University Science Books}%
+  }
+  \keyw{Science / Chemistry / General, Science / Life Sciences / Biochemistry}
+  \strng{namehash}{WJGSJ1}
+  \strng{fullhash}{WJGSJ1}
+  \field{abstract}{%
+  Ligand-macromolecule interactions are of fundamental importance in the
+  control of biological processes. This book applies the principles of linkage
+  thermodynamics to polyfunctional macromolecular systems under equilibrium
+  conditions, and describes the binding, linkage, and feedback phenomena that
+  lead to control of complex metabolic processes. The first chapter sets out
+  the different processes (conformational changes, changes in state of
+  aggregation, phase changes) involving biological macromolecules which are
+  affected by chemical variables (such as ligands) or physical variables (such
+  as temperature and pressure). The general effects of ligands on
+  micromolecular conformations and interactions are illustrated with specific
+  examples from the respiratory proteins, electron-transport proteins, and
+  nucleic acid binding proteins. Subsequent chapters develop these themes, and
+  describe in detail how the mathematics of regulation and control can be
+  applied to macromolecules in biological system.%
+  }
+  \field{isbn}{978-0-935702-56-9}
+  \field{pagetotal}{354}
+  \field{shorttitle}{Binding and Linkage}
+  \field{title}{Binding and Linkage: Functional Chemistry of Biological
+  Macromolecules}
+  \field{langid}{english}
+  \field{year}{1990}
+\endentry
+
+\entry{rohatgi_webplotdigitizer_2015}{software}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rohatgi}{R.}%
+     {Ankit}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RA1}
+  \strng{fullhash}{RA1}
+  \field{title}{{WebPlotDigitizer}}
+  \verb{url}
+  \verb http://arohatgi.info/WebPlotDigitizer
+  \endverb
+  \field{version}{3.9}
+  \field{month}{10}
+  \field{year}{2015}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

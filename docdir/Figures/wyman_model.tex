@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+\tikzstyle{node}=[minimum height=3em, minimum width=5em, node distance = 5em]
+\node[node](A) at (0,0)  {R + R};
+\node[node](B) [below = of A] {R + RL};
+\node[node](C) [below = of B]  {RL + RL};
+\node[node](D) [right = of A] {(RR)};
+\node[node](E) [below = of D] {(RR)L};
+\node[node](F) [below = of E]  {(RR)LL};
+\draw[-left to, line width=0.5pt] (A) -- node[right]{$K_{11}$} (B);
+\draw[-left to, line width=0.5pt] (B) -- (A);
+\draw[-left to, line width=0.5pt] (B) -- node[right]{$K_{11}$} (C);
+\draw[-left to, line width=0.5pt] (C) -- (B);
+\draw[-left to, line width=0.5pt] (A) -- node[above]{$D_{20}$} (D);
+\draw[-left to, line width=0.5pt] (D) -- (A);
+\draw[-left to, line width=0.5pt] (B) -- node[above]{$D_{21}$} (E);
+\draw[-left to, line width=0.5pt] (E) -- (B);
+\draw[-left to, line width=0.5pt] (C) -- node[above]{$D_{22}$} (F);
+\draw[-left to, line width=0.5pt] (F) -- (C);
+\draw[-left to, line width=0.5pt] (D) -- node[right]{$K_{21}$} (E);
+\draw[-left to, line width=0.5pt] (E) -- (D);
+\draw[-left to, line width=0.5pt] (E) -- node[right]{$K_{22}$} (F);
+\draw[-left to, line width=0.5pt] (F) -- (E);
+\end{tikzpicture}

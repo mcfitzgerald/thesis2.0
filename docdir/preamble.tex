@@ -1,0 +1,29 @@
+\documentclass[12pt, titlepage]{article}
+
+%\usepackage{microtype}
+
+\usepackage[title, titletoc]{appendix}
+
+\usepackage{mathtools}
+
+\usepackage[backend=bibtex, style=nature, citestyle=nature, maxbibnames=2, isbn=false, date=year]{biblatex}
+
+\addbibresource{./Bibliography/Masters.bib}
+
+\usepackage{blindtext}
+
+\usepackage{tikz}
+
+\usetikzlibrary{matrix,arrows,positioning}
+
+\usepackage{graphicx}
+
+\frenchspacing
+
+
+\newenvironment{acknowledgements}
+  {\renewcommand{\abstractname}{Acknowledgments}% Abstract > Acknowledgements
+   \begin{abstract}}
+  {\end{abstract}
+   \clearpage}
+

@@ -1,0 +1,47 @@
+\input{preamble.tex}
+
+\begin{document}
+
+\title{\textbf{\LARGE{Cooperativity in Dimerizing Systems}} \\[0.5em]\normalsize{Comparison of Epidermal Growth Factor an Estrogen Receptors}}
+\author{Michael C. Fitzgerald}
+\date{May 2016}
+\maketitle
+
+\input{./Frontmatter/abstract.tex}
+
+\input{./Frontmatter/acknowledgements.tex}
+
+\pagestyle{empty}
+\vspace*{150px}
+\begin{center}
+\emph{for Megan}
+\end{center}
+\clearpage
+
+\pagestyle{empty} %get rid of header/footer for toc page
+\tableofcontents %put toc in
+\clearpage %start new page
+\pagestyle{plain} % put headers/footers back on
+\setcounter{page}{1} %reset the page counter
+
+\input{./Sections/introduction.tex}
+\input{./Sections/definitions.tex}
+\input{./Sections/models.tex}
+\input{./Sections/data.tex}
+
+\clearpage
+\printbibliography
+\addcontentsline{toc}{section}{Bibliography}
+
+\clearpage
+\pagenumbering{arabic}% resets `page` counter to 1
+\renewcommand*{\thepage}{A\arabic{page}}
+\begin{appendices}
+
+\input{./Appendices/prism_code.tex}
+\input{./Appendices/r_code.tex}
+
+\end{appendices}
+
+
+\end{document}

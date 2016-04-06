@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Definitions}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Models}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Data}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Bibliography}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {A}Prism Code}{A1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {B}R Code}{A3}

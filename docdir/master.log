@@ -1,11 +1,11 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  2 APR 2016 23:09
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  3 APR 2016 16:44
  restricted \write18 enabled.
  file:line:error style messages enabled.
-**mast.tex
-(./mast.tex
+**master.tex
+(./master.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+(./preamble.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -28,20 +28,32 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count88
 \c@@ppsaveapp=\count89
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks14
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count90
+\calc@Bcount=\count91
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count92
+\calc@Cskip=\skip45
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -50,52 +62,66 @@ Package: amstext 2000/06/29 v2.01
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
-\ex@=\dimen103
+\ex@=\dimen105
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen104
+\pmbraise@=\dimen106
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen105
+\big@size=\dimen107
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks16
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks17
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
 \@envbody=\toks18
-\multlinegap=\skip44
-\multlinetaggap=\skip45
+\multlinegap=\skip47
+\multlinetaggap=\skip48
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count105
+\l_MT_multwidth_dim=\dimen114
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen115
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen116
+\l_MT_above_intertext_sep=\dimen117
+\l_MT_below_intertext_sep=\dimen118
+\l_MT_above_shortintertext_sep=\dimen119
+\l_MT_below_shortintertext_sep=\dimen120
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
@@ -106,15 +132,11 @@ B)
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count102
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
+\etb@tempcnta=\count106
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count103
+\lrq@indent=\count107
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -126,121 +148,121 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count104
-\c@listtotal=\count105
-\c@listcount=\count106
-\c@liststart=\count107
-\c@liststop=\count108
-\c@citecount=\count109
-\c@citetotal=\count110
-\c@multicitecount=\count111
-\c@multicitetotal=\count112
-\c@instcount=\count113
-\c@maxnames=\count114
-\c@minnames=\count115
-\c@maxitems=\count116
-\c@minitems=\count117
-\c@citecounter=\count118
-\c@savedcitecounter=\count119
-\c@uniquelist=\count120
-\c@uniquename=\count121
-\c@refsection=\count122
-\c@refsegment=\count123
-\c@maxextrayear=\count124
-\c@maxextraalpha=\count125
-\c@abbrvpenalty=\count126
-\c@highnamepenalty=\count127
-\c@lownamepenalty=\count128
-\c@maxparens=\count129
-\c@parenlevel=\count130
-\blx@tempcnta=\count131
-\blx@tempcntb=\count132
-\blx@tempcntc=\count133
-\blx@maxsection=\count134
-\blx@maxsegment=\count135
-\blx@notetype=\count136
-\blx@parenlevel@text=\count137
-\blx@parenlevel@foot=\count138
-\labelnumberwidth=\skip46
-\labelalphawidth=\skip47
-\shorthandwidth=\skip48
-\biblabelsep=\skip49
-\bibitemsep=\skip50
-\bibnamesep=\skip51
-\bibinitsep=\skip52
-\bibparsep=\skip53
-\bibhang=\skip54
+\c@tabx@nest=\count108
+\c@listtotal=\count109
+\c@listcount=\count110
+\c@liststart=\count111
+\c@liststop=\count112
+\c@citecount=\count113
+\c@citetotal=\count114
+\c@multicitecount=\count115
+\c@multicitetotal=\count116
+\c@instcount=\count117
+\c@maxnames=\count118
+\c@minnames=\count119
+\c@maxitems=\count120
+\c@minitems=\count121
+\c@citecounter=\count122
+\c@savedcitecounter=\count123
+\c@uniquelist=\count124
+\c@uniquename=\count125
+\c@refsection=\count126
+\c@refsegment=\count127
+\c@maxextrayear=\count128
+\c@maxextraalpha=\count129
+\c@abbrvpenalty=\count130
+\c@highnamepenalty=\count131
+\c@lownamepenalty=\count132
+\c@maxparens=\count133
+\c@parenlevel=\count134
+\blx@tempcnta=\count135
+\blx@tempcntb=\count136
+\blx@tempcntc=\count137
+\blx@maxsection=\count138
+\blx@maxsegment=\count139
+\blx@notetype=\count140
+\blx@parenlevel@text=\count141
+\blx@parenlevel@foot=\count142
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\shorthandwidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
 \blx@auxin=\read1
 \blx@auxout=\write3
-\c@mincomprange=\count139
-\c@maxcomprange=\count140
-\c@mincompwidth=\count141
-\c@labelname=\count142
-\c@savedlabelname=\count143
-\c@author=\count144
-\c@savedauthor=\count145
-\c@shortauthor=\count146
-\c@savedshortauthor=\count147
-\c@editor=\count148
-\c@savededitor=\count149
-\c@editora=\count150
-\c@savededitora=\count151
-\c@editorb=\count152
-\c@savededitorb=\count153
-\c@editorc=\count154
-\c@savededitorc=\count155
-\c@shorteditor=\count156
-\c@savedshorteditor=\count157
-\c@bookauthor=\count158
-\c@savedbookauthor=\count159
-\c@translator=\count160
-\c@savedtranslator=\count161
-\c@annotator=\count162
-\c@savedannotator=\count163
-\c@commentator=\count164
-\c@savedcommentator=\count165
-\c@introduction=\count166
-\c@savedintroduction=\count167
-\c@foreword=\count168
-\c@savedforeword=\count169
-\c@afterword=\count170
-\c@savedafterword=\count171
-\c@holder=\count172
-\c@savedholder=\count173
-\c@namea=\count174
-\c@savednamea=\count175
-\c@nameb=\count176
-\c@savednameb=\count177
-\c@namec=\count178
-\c@savednamec=\count179
-\c@institution=\count180
-\c@savedinstitution=\count181
-\c@language=\count182
-\c@savedlanguage=\count183
-\c@location=\count184
-\c@savedlocation=\count185
-\c@organization=\count186
-\c@savedorganization=\count187
-\c@origlocation=\count188
-\c@savedoriglocation=\count189
-\c@origpublisher=\count190
-\c@savedorigpublisher=\count191
-\c@pageref=\count192
-\c@savedpageref=\count193
-\c@publisher=\count194
-\c@savedpublisher=\count195
-\c@lista=\count196
-\c@savedlista=\count197
-\c@listb=\count198
-\c@savedlistb=\count199
-\c@listc=\count200
-\c@savedlistc=\count201
-\c@listd=\count202
-\c@savedlistd=\count203
-\c@liste=\count204
-\c@savedliste=\count205
-\c@listf=\count206
-\c@savedlistf=\count207
+\c@mincomprange=\count143
+\c@maxcomprange=\count144
+\c@mincompwidth=\count145
+\c@labelname=\count146
+\c@savedlabelname=\count147
+\c@author=\count148
+\c@savedauthor=\count149
+\c@shortauthor=\count150
+\c@savedshortauthor=\count151
+\c@editor=\count152
+\c@savededitor=\count153
+\c@editora=\count154
+\c@savededitora=\count155
+\c@editorb=\count156
+\c@savededitorb=\count157
+\c@editorc=\count158
+\c@savededitorc=\count159
+\c@shorteditor=\count160
+\c@savedshorteditor=\count161
+\c@bookauthor=\count162
+\c@savedbookauthor=\count163
+\c@translator=\count164
+\c@savedtranslator=\count165
+\c@annotator=\count166
+\c@savedannotator=\count167
+\c@commentator=\count168
+\c@savedcommentator=\count169
+\c@introduction=\count170
+\c@savedintroduction=\count171
+\c@foreword=\count172
+\c@savedforeword=\count173
+\c@afterword=\count174
+\c@savedafterword=\count175
+\c@holder=\count176
+\c@savedholder=\count177
+\c@namea=\count178
+\c@savednamea=\count179
+\c@nameb=\count180
+\c@savednameb=\count181
+\c@namec=\count182
+\c@savednamec=\count183
+\c@institution=\count184
+\c@savedinstitution=\count185
+\c@language=\count186
+\c@savedlanguage=\count187
+\c@location=\count188
+\c@savedlocation=\count189
+\c@organization=\count190
+\c@savedorganization=\count191
+\c@origlocation=\count192
+\c@savedoriglocation=\count193
+\c@origpublisher=\count194
+\c@savedorigpublisher=\count195
+\c@pageref=\count196
+\c@savedpageref=\count197
+\c@publisher=\count198
+\c@savedpublisher=\count199
+\c@lista=\count200
+\c@savedlista=\count201
+\c@listb=\count202
+\c@savedlistb=\count203
+\c@listc=\count204
+\c@savedlistc=\count205
+\c@listd=\count206
+\c@savedlistd=\count207
+\c@liste=\count208
+\c@savedliste=\count209
+\c@listf=\count210
+\c@savedlistf=\count211
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -252,13 +274,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count208
-\c@textcitetotal=\count209
-\c@textcitemaxnames=\count210
-\c@biburlnumpenalty=\count211
-\c@biburlucpenalty=\count212
-\c@biburllcpenalty=\count213
-\c@smartand=\count214
+\c@textcitecount=\count212
+\c@textcitetotal=\count213
+\c@textcitemaxnames=\count214
+\c@biburlnumpenalty=\count215
+\c@biburlucpenalty=\count216
+\c@biburllcpenalty=\count217
+\c@smartand=\count218
 )
 Package biblatex Info: Trying to load bibliography style 'nature'...
 Package biblatex Info: ... file 'nature.bbx' found.
@@ -280,8 +302,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count215
-\c@bbx:relatedtotal=\count216
+\c@bbx:relatedcount=\count219
+\c@bbx:relatedtotal=\count220
 ))))
 Package biblatex Info: Trying to load citation style 'nature'...
 Package biblatex Info: ... file 'nature.cbx' found.
@@ -293,8 +315,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count217
-\c@cbx@tempcntb=\count218
+\c@cbx@tempcnta=\count221
+\c@cbx@tempcntb=\count222
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -319,136 +341,38 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count219
-\c@Blindtext=\count220
-\c@blind@countparstart=\count221
-\blind@countxx=\count222
-\blindtext@numBlindtext=\count223
-\blind@countyy=\count224
-\c@blindlist=\count225
-\c@blindlistlevel=\count226
-\c@blindlist@level=\count227
-\blind@listitem=\count228
-\c@blind@listcount=\count229
-\c@blind@levelcount=\count230
-\blind@mathformula=\count231
-\blind@Mathformula=\count232
-\c@blind@randomcount=\count233
-\c@blind@randommax=\count266
-\c@blind@pangramcount=\count267
-\c@blind@pangrammax=\count268
+\c@blindtext=\count223
+\c@Blindtext=\count224
+\c@blind@countparstart=\count225
+\blind@countxx=\count226
+\blindtext@numBlindtext=\count227
+\blind@countyy=\count228
+\c@blindlist=\count229
+\c@blindlistlevel=\count230
+\c@blindlist@level=\count231
+\blind@listitem=\count232
+\c@blind@listcount=\count233
+\c@blind@levelcount=\count266
+\blind@mathformula=\count267
+\blind@Mathformula=\count268
+\c@blind@randomcount=\count269
+\c@blind@randommax=\count270
+\c@blind@pangramcount=\count271
+\c@blind@pangrammax=\count272
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks21
-\MT@count=\count269
-LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen112
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count270
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype-luatex.def
-File: microtype-luatex.def 2013/05/23 v2.5a Definitions specific to luatex (RS)
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
-Package: luatexbase 2013/05/11 v0.6 Resource management for the LuaTeX macro pro
-grammer
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/luatex.sty
-Package: luatex 2010/03/09 v0.4 LuaTeX basic definition package (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
-\et@xins=\count271
-)
-\LuT@AllocAttribute=\count277
-\LuT@AllocCatcodeTable=\count278
-\CatcodeTableStack=\count279
-\CatcodeTableIniTeX=\catcodetable1
-\CatcodeTableString=\catcodetable3
-\CatcodeTableOther=\catcodetable5
-\CatcodeTableLaTeX=\catcodetable7
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/luatex-loader.sty
-Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
-
-(/usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)))
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-compat.sty
-Package: luatexbase-compat 2011/05/24 v0.4 Compatibility tools for LuaTeX
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-modutils.s
-ty
-Package: luatexbase-modutils 2013/05/11 v0.6 Module utilities for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-loader.sty
-Package: luatexbase-loader 2013/05/11 v0.6 Lua module loader for LuaTeX
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.loader.lua)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/modutils.lua)
-Lua module: luatexbase-modutils 2013/05/11 0.6 Module utilities for LuaTeX
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-regs.sty
-Package: luatexbase-regs 2011/05/24 v0.4 Registers allocation for LuaTeX
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-attr.sty
-Package: luatexbase-attr 2013/05/11 v0.6 Attributes allocation for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/attr.lua)
-Lua module: luatexbase-attr 2013/05/11 0.6 Attributes allocation for LuaTeX
-\lltxb@attr@unsetvalue=\count280
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-cctb.sty
-Package: luatexbase-cctb 2013/05/11 v0.6 Catcodetable allocation for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/cctb.lua)
-Lua module: luatexbase-cctb 2013/05/11 0.6 Catcodetable allocation for LuaTeX
-\lltxb@catcodetable@alloc=\count281
-\CatcodeTableStack=\count282
-\CatcodeTableIniTeX=\luatexcatcodetable1
-\CatcodeTableString=\luatexcatcodetable3
-\CatcodeTableOther=\luatexcatcodetable5
-\CatcodeTableLaTeX=\luatexcatcodetable7
-\CatcodeTableLaTeXAtLetter=\luatexcatcodetable9
-\CatcodeTableExpl=\luatexcatcodetable11
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-mcb.sty
-Package: luatexbase-mcb 2013/05/11 v0.6 Callback management for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/mcb.lua)
-Lua module: luatexbase-mcb 2013/05/11 0.6 register several functions in a callba
-ck
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.lua)
-Lua module: microtype 2013/05/15 2.5 microtype module.
-LaTeX Info: Redefining \lsstyle on input line 644.
-LaTeX Info: Redefining \lslig on input line 644.
-\MT@outer@space=\skip256
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
-))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks22
-\pgfutil@tempdima=\dimen256
-\pgfutil@tempdimb=\dimen257
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen121
+\pgfutil@tempdimb=\dimen122
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box256
+\pgfutil@abb=\box28
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -475,42 +399,45 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count283
+\Gread@gobject=\count273
 ))
-\Gin@req@height=\dimen258
-\Gin@req@width=\dimen259
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks23
 ))
-\pgf@x=\dimen260
-\pgf@y=\dimen261
-\pgf@xa=\dimen262
-\pgf@ya=\dimen263
-\pgf@xb=\dimen264
-\pgf@yb=\dimen265
-\pgf@xc=\dimen266
-\pgf@yc=\dimen267
+\pgf@x=\dimen125
+\pgf@y=\dimen126
+\pgf@xa=\dimen127
+\pgf@ya=\dimen128
+\pgf@xb=\dimen129
+\pgf@yb=\dimen130
+\pgf@xc=\dimen131
+\pgf@yc=\dimen132
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count284
-\c@pgf@countb=\count285
-\c@pgf@countc=\count286
-\c@pgf@countd=\count287
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
+\c@pgf@counta=\count274
+\c@pgf@countb=\count275
+\c@pgf@countc=\count276
+\c@pgf@countd=\count277
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -528,8 +455,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count288
-\pgfsyssoftpath@bigbuffer@items=\count289
+\pgfsyssoftpath@smallbuffer@items=\count278
+\pgfsyssoftpath@bigbuffer@items=\count279
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -557,12 +484,12 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen268
-\pgfmath@count=\count290
-\pgfmath@box=\box257
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@dimen=\dimen133
+\pgfmath@count=\count280
+\pgfmath@box=\box29
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -583,57 +510,57 @@ code.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count291
+\c@pgfmathroundto@lastzeros=\count281
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen269
-\pgf@picmaxx=\dimen270
-\pgf@picminy=\dimen271
-\pgf@picmaxy=\dimen272
-\pgf@pathminx=\dimen273
-\pgf@pathmaxx=\dimen274
-\pgf@pathminy=\dimen275
-\pgf@pathmaxy=\dimen276
-\pgf@xx=\dimen277
-\pgf@xy=\dimen278
-\pgf@yx=\dimen279
-\pgf@yy=\dimen280
-\pgf@zx=\dimen281
-\pgf@zy=\dimen282
+\pgf@picminx=\dimen134
+\pgf@picmaxx=\dimen135
+\pgf@picminy=\dimen136
+\pgf@picmaxy=\dimen137
+\pgf@pathminx=\dimen138
+\pgf@pathmaxx=\dimen139
+\pgf@pathminy=\dimen140
+\pgf@pathmaxy=\dimen141
+\pgf@xx=\dimen142
+\pgf@xy=\dimen143
+\pgf@yx=\dimen144
+\pgf@yy=\dimen145
+\pgf@zx=\dimen146
+\pgf@zy=\dimen147
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen283
-\pgf@path@lasty=\dimen284
+\pgf@path@lastx=\dimen148
+\pgf@path@lasty=\dimen149
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen285
-\pgf@shorten@start@additional=\dimen286
+\pgf@shorten@end@additional=\dimen150
+\pgf@shorten@start@additional=\dimen151
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box258
-\pgf@hbox=\box259
-\pgf@layerbox@main=\box260
-\pgf@picture@serial@count=\count292
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count282
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen287
+\pgflinewidth=\dimen152
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen288
-\pgf@pt@y=\dimen289
-\pgf@pt@temp=\dimen290
+\pgf@pt@x=\dimen153
+\pgf@pt@y=\dimen154
+\pgf@pt@temp=\dimen155
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -650,13 +577,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen291
+\pgfarrowsep=\dimen156
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen292
-\pgf@sys@shading@range@num=\count293
+\pgf@max=\dimen157
+\pgf@sys@shading@range@num=\count283
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -665,7 +592,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box261
+\pgfexternal@startupbox=\box33
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -682,7 +609,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box262
+\pgfnodeparttextbox=\box34
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -691,8 +618,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen293
-\pgf@nodesepend=\dimen294
+\pgf@nodesepstart=\dimen158
+\pgf@nodesepend=\dimen159
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -707,10 +634,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen295
-\pgffor@skip=\dimen296
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@iter=\dimen160
+\pgffor@skip=\dimen161
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -719,32 +646,32 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count294
-\pgfplotmarksize=\dimen297
+\pgf@plot@mark@count=\count284
+\pgfplotmarksize=\dimen162
 )
-\tikz@lastx=\dimen298
-\tikz@lasty=\dimen299
-\tikz@lastxsaved=\dimen300
-\tikz@lastysaved=\dimen301
-\tikzleveldistance=\dimen302
-\tikzsiblingdistance=\dimen303
-\tikz@figbox=\box263
-\tikz@figbox@bg=\box264
-\tikz@tempbox=\box265
-\tikz@tempbox@bg=\box266
-\tikztreelevel=\count295
-\tikznumberofchildren=\count296
-\tikznumberofcurrentchild=\count297
-\tikz@fig@count=\count298
+\tikz@lastx=\dimen163
+\tikz@lasty=\dimen164
+\tikz@lastxsaved=\dimen165
+\tikz@lastysaved=\dimen166
+\tikzleveldistance=\dimen167
+\tikzsiblingdistance=\dimen168
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count285
+\tikznumberofchildren=\count286
+\tikznumberofcurrentchild=\count287
+\tikz@fig@count=\count288
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count299
-\pgfmatrixcurrentcolumn=\count300
-\pgf@matrix@numberofcolumns=\count301
+\pgfmatrixcurrentrow=\count289
+\pgfmatrixcurrentcolumn=\count290
+\pgf@matrix@numberofcolumns=\count291
 )
-\tikz@expandcount=\count302
+\tikz@expandcount=\count292
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -761,36 +688,36 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen304
+\arrowsize=\dimen169
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
-)
+))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count303
-\@quotereset=\count304
+\@quotelevel=\count293
+\@quotereset=\count294
 
-(./mast.aux)
-\openout1 = mast.aux
+(./master.aux)
+\openout1 = master.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -801,43 +728,34 @@ Package biblatex Warning: Data encoding is 'utf8'.
 (biblatex)                Use backend=biber.
 
 
-\openout3 = mast-blx.bib
+\openout3 = master-blx.bib
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'mast.bbl' found.
-(./mast.bbl)
-Package biblatex Info: Reference section=0 on input line 17.
-Package biblatex Info: Reference segment=0 on input line 17.
-LaTeX Info: Redefining \microtypecontext on input line 17.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of spacing.
-Package microtype Info: No adjustment of kerning.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
-RS)
-) ABD: EveryShipout initializing macros
+Package biblatex Info: ... file 'master.bbl' found.
+(./master.bbl)
+Package biblatex Info: Reference section=0 on input line 3.
+Package biblatex Info: Reference segment=0 on input line 3.
+ ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen305
-\scratchbox=\box267
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen306
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count295
+\scratchdimen=\dimen170
+\scratchbox=\box39
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen171
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
 
 
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
@@ -846,8 +764,11 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 
-(/usr/local/texlive/2015/texmf-dist/scripts/oberdiek/pdftexcmds.lua)
-\pdftexcmds@toks=\toks36
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/luatex-loader.sty
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(/usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua))
+\pdftexcmds@toks=\toks34
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -875,64 +796,77 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+[1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./Frontmatter/abstract.tex [1]) (./Frontmatter/acknowledgements.tex [1])
+[1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./
-mast.toc)
+] (./master.toc)
 \tf@toc=\write5
 
-\openout5 = mast.toc
+\openout5 = master.toc
+ [2
 
-[1] <grph4.pdf, id=17, 336.25626pt x 194.7275pt>
-File: grph4.pdf Graphic file (type pdf)
- <use grph4.pdf>
-Package pdftex.def Info: grph4.pdf used on input line 59.
+] (./Sections/introduction.tex)
+(./Sections/definitions.tex [1
+
+]) (./Sections/models.tex
+(./Figures/wyman_model.tex)) (./Sections/data.tex [2] [3] [4]
+<./Figures/notides_pull.pdf, id=38, 336.25626pt x 194.7275pt>
+File: ./Figures/notides_pull.pdf Graphic file (type pdf)
+
+<use ./Figures/notides_pull.pdf>
+Package pdftex.def Info: ./Figures/notides_pull.pdf used on input line 5.
 (pdftex.def)             Requested size: 336.25543pt x 194.727pt.
- [1
+) [5]
 
-] [2<./grph4.pdf>] (./diag.tex) [3] [4] [5] [6
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-] [7] [8] [9
+[6] [7<./Figures/notides_pull.pdf>] [8]
 
-] (./mast.aux)
-Package logreq Info: Writing requests to 'mast.run.xml'.
+Package biblatex Warning: No driver for entry type 'software'.
+(biblatex)                Using fallback driver on input line 33.
 
-\openout1 = mast.run.xml
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 33.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 33.
+ [9
+
+]
+(./Appendices/prism_code.tex [1
+
+] [2]) (./Appendices/r_code.tex [3
+
+] [4])
+(./master.aux)
+Package logreq Info: Writing requests to 'master.run.xml'.
+
+\openout1 = master.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 20253 strings out of 494693
+ 18912 strings out of 494693
  100000,552014 words of node,token memory allocated
- 339 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 45 glue_spec, 1 write nodes
-   avail lists: 1:1,2:28,3:280,4:1490,5:204,6:5472,7:428,9:180,10:529
- 23114 multiletter control sequences out of 65536+600000
- 56 fonts using 2211543 bytes
- 55i,8n,54p,815b,899s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 361 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 47 glue_spec, 2 write nodes
+   avail lists: 2:27,3:321,4:2150,5:304,6:7828,7:1861,9:327,10:769
+ 21825 multiletter control sequences out of 65536+600000
+ 47 fonts using 1857703 bytes
+ 57i,11n,54p,816b,907s stack positions out of 5000i,500n,10000p,200000b,100000s
 <</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><<
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><</u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><</usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on mast.pdf (12 pages, 94802 bytes).
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><</usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on master.pdf (18 pages, 108811 bytes).
 
-PDF statistics: 81 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+PDF statistics: 103 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

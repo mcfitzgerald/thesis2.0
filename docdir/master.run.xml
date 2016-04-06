@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>mast.aux</file>
-      <file>mast-blx.bib</file>
+      <file>master.aux</file>
+      <file>master-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>mast.bbl</file>
+      <file>master.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-compat.def</file>
@@ -68,23 +68,23 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>mast</infile>
+      <infile>master</infile>
     </cmdline>
     <input>
-      <file>mast.aux</file>
+      <file>master.aux</file>
     </input>
     <output>
-      <file>mast.bbl</file>
+      <file>master.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>mast.bbl</file>
+      <file>master.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>mast.aux</file>
-      <file>mast-blx.bib</file>
+      <file>master.aux</file>
+      <file>master-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>Bibz.bib</file>
+      <file>./Bibliography/Masters.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>
