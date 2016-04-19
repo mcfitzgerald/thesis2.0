@@ -9,11 +9,11 @@ c__builtin__
 set
 p4
 ((lp5
-Vgraphicx
+Vfootmisc
 p6
 aVmathtools
 p7
-aVfootmisc
+aVgraphicx
 p8
 aVfontspec
 p9

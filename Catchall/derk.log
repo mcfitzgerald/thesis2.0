@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  18 APR 2016 07:22
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  19 APR 2016 06:55
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **derk.tex
@@ -379,7 +379,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.023 seconds
+luaotfload | main : fontloader loaded in 0.045 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -770,10 +770,10 @@ derk.aux))
 Here is how much of LuaTeX's memory you used:
  15811 strings out of 494693
  100000,383344 words of node,token memory allocated
- 381 words of node memory still in use:
+ 382 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 3 kern, 6 attribute, 44 glue_spec, 6 attrib
 ute_list, 1 write nodes
-   avail lists: 2:10022,3:41,4:702,5:165,6:3314,7:185,9:63,10:348
+   avail lists: 2:10158,3:42,4:722,5:172,6:3356,7:180,9:63,10:350
  19201 multiletter control sequences out of 65536+600000
  48 fonts using 3476287 bytes
  47i,8n,40p,1193b,161s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -787,7 +787,7 @@ aps10-regular.otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/l
 mroman12-bold.otf><</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr10.pfb><</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on derk.pdf (2 pages, 43978 bytes).
+Output written on derk.pdf (2 pages, 44240 bytes).
 
 PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
