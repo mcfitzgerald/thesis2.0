@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  19 APR 2016 06:55
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  20 APR 2016 21:02
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **derk.tex
@@ -148,21 +148,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
-Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks20
-\footnotemargin=\dimen123
-\c@pp@next@reset=\count104
-Package footmisc Info: Declaring symbol style bringhurst on input line 855.
-Package footmisc Info: Declaring symbol style chicago on input line 863.
-Package footmisc Info: Declaring symbol style wiley on input line 872.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
-Package footmisc Info: Declaring symbol style lamport* on input line 903.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
-
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTeX
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2015/04/23 v4.01 for typesetting chemical formulae
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
@@ -177,31 +164,31 @@ L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
 L3 Module: l3str 2015/03/01 v5545 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2015/02/21 v5529 L3 Integers
-\c_max_int=\count105
-\l_tmpa_int=\count106
-\l_tmpb_int=\count107
-\g_tmpa_int=\count108
-\g_tmpb_int=\count109
+\c_max_int=\count104
+\l_tmpa_int=\count105
+\l_tmpb_int=\count106
+\g_tmpa_int=\count107
+\g_tmpb_int=\count108
 L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
 L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
-\g__prg_map_int=\count110
+\g__prg_map_int=\count109
 L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
 L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
 L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
 L3 Module: l3msg 2015/02/26 v5537 L3 Messages
 L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
-\l_iow_line_count_int=\count111
-\l__iow_target_count_int=\count112
-\l__iow_current_line_int=\count113
-\l__iow_current_word_int=\count114
-\l__iow_current_indentation_int=\count115
+\l_iow_line_count_int=\count110
+\l__iow_target_count_int=\count111
+\l__iow_current_line_int=\count112
+\l__iow_current_word_int=\count113
+\l__iow_current_indentation_int=\count114
 L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
-\c_zero_dim=\dimen124
-\c_max_dim=\dimen125
-\l_tmpa_dim=\dimen126
-\l_tmpb_dim=\dimen127
-\g_tmpa_dim=\dimen128
-\g_tmpb_dim=\dimen129
+\c_zero_dim=\dimen123
+\c_max_dim=\dimen124
+\l_tmpa_dim=\dimen125
+\l_tmpb_dim=\dimen126
+\g_tmpa_dim=\dimen127
+\g_tmpb_dim=\dimen128
 \c_zero_skip=\skip50
 \c_max_skip=\skip51
 \l_tmpa_skip=\skip52
@@ -215,18 +202,18 @@ L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
-\g__keyval_level_int=\count116
-\l_keys_choice_int=\count117
+\g__keyval_level_int=\count115
+\l_keys_choice_int=\count116
 L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
-\c__fp_leading_shift_int=\count118
-\c__fp_middle_shift_int=\count119
-\c__fp_trailing_shift_int=\count120
-\c__fp_big_leading_shift_int=\count121
-\c__fp_big_middle_shift_int=\count122
-\c__fp_big_trailing_shift_int=\count123
-\c__fp_Bigg_leading_shift_int=\count124
-\c__fp_Bigg_middle_shift_int=\count125
-\c__fp_Bigg_trailing_shift_int=\count126
+\c__fp_leading_shift_int=\count117
+\c__fp_middle_shift_int=\count118
+\c__fp_trailing_shift_int=\count119
+\c__fp_big_leading_shift_int=\count120
+\c__fp_big_middle_shift_int=\count121
+\c__fp_big_trailing_shift_int=\count122
+\c__fp_Bigg_leading_shift_int=\count123
+\c__fp_Bigg_middle_shift_int=\count124
+\c__fp_Bigg_trailing_shift_int=\count125
 L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \c_empty_box=\box28
 \l_tmpa_box=\box29
@@ -235,13 +222,13 @@ L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \g_tmpb_box=\box32
 L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_internal_box=\box33
-\l__coffin_internal_dim=\dimen130
-\l__coffin_offset_x_dim=\dimen131
-\l__coffin_offset_y_dim=\dimen132
-\l__coffin_x_dim=\dimen133
-\l__coffin_y_dim=\dimen134
-\l__coffin_x_prime_dim=\dimen135
-\l__coffin_y_prime_dim=\dimen136
+\l__coffin_internal_dim=\dimen129
+\l__coffin_offset_x_dim=\dimen130
+\l__coffin_offset_y_dim=\dimen131
+\l__coffin_x_dim=\dimen132
+\l__coffin_y_dim=\dimen133
+\l__coffin_x_prime_dim=\dimen134
+\l__coffin_y_prime_dim=\dimen135
 \c_empty_coffin=\box34
 \l__coffin_aligned_coffin=\box35
 \l__coffin_aligned_internal_coffin=\box36
@@ -250,406 +237,246 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_coffin=\box39
 \l__coffin_display_coord_coffin=\box40
 \l__coffin_display_pole_coffin=\box41
-\l__coffin_display_offset_dim=\dimen137
-\l__coffin_display_x_dim=\dimen138
-\l__coffin_display_y_dim=\dimen139
+\l__coffin_display_offset_dim=\dimen136
+\l__coffin_display_x_dim=\dimen137
+\l__coffin_display_y_dim=\dimen138
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen140
-\l__box_bottom_dim=\dimen141
-\l__box_left_dim=\dimen142
-\l__box_right_dim=\dimen143
-\l__box_top_new_dim=\dimen144
-\l__box_bottom_new_dim=\dimen145
-\l__box_left_new_dim=\dimen146
-\l__box_right_new_dim=\dimen147
+\l__box_top_dim=\dimen139
+\l__box_bottom_dim=\dimen140
+\l__box_left_dim=\dimen141
+\l__box_right_dim=\dimen142
+\l__box_top_new_dim=\dimen143
+\l__box_bottom_new_dim=\dimen144
+\l__box_left_new_dim=\dimen145
+\l__box_right_new_dim=\dimen146
 \l__box_internal_box=\box42
-\l__coffin_bounding_shift_dim=\dimen148
-\l__coffin_left_corner_dim=\dimen149
-\l__coffin_right_corner_dim=\dimen150
-\l__coffin_bottom_corner_dim=\dimen151
-\l__coffin_top_corner_dim=\dimen152
-\l__coffin_scaled_total_height_dim=\dimen153
-\l__coffin_scaled_width_dim=\dimen154
+\l__coffin_bounding_shift_dim=\dimen147
+\l__coffin_left_corner_dim=\dimen148
+\l__coffin_right_corner_dim=\dimen149
+\l__coffin_bottom_corner_dim=\dimen150
+\l__coffin_top_corner_dim=\dimen151
+\l__coffin_scaled_total_height_dim=\dimen152
+\l__coffin_scaled_width_dim=\dimen153
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
 File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/03/01 v5544 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count127
+\l__driver_color_stack_int=\count126
 ))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+Package: l3regex 2014/11/25 v5471 L3 Experimental regular expressions
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.s
+ty
+Package: l3tl-build 2014/08/25 v5378 L3 Experimental token list construction
+\l__tl_build_start_index_int=\count127
+\l__tl_build_index_int=\count128
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysi
+s.sty
+Package: l3tl-analysis 2014/05/06 v4745 L3 Experimental token lists analysis
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3str.sty
+Package: l3str 2014/11/25 v5471 L3 Experimental strings
+)
+\l__tl_analysis_normal_int=\count129
+\l__tl_analysis_index_int=\count130
+\l__tl_analysis_nesting_int=\count131
+\l__tl_analysis_type_int=\count132
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+Package: l3flag 2014/11/25 v5471 L3 Experimental flags
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3str-conver
+t.sty
+Package: l3str-convert 2014/06/03 v5028 L3 Experimental string encoding conversi
+ons
+\l__str_internal_int=\count133
+)
+\l__regex_internal_a_int=\count134
+\l__regex_internal_b_int=\count135
+\l__regex_internal_c_int=\count136
+\l__regex_balance_int=\count137
+\l__regex_group_level_int=\count138
+\l__regex_mode_int=\count139
+\l__regex_catcodes_int=\count140
+\l__regex_default_catcodes_int=\count141
+\c__regex_catcode_L_int=\count142
+\c__regex_catcode_O_int=\count143
+\c__regex_catcode_A_int=\count144
+\c__regex_all_catcodes_int=\count145
+\l__regex_show_lines_int=\count146
+\l__regex_min_state_int=\count147
+\l__regex_max_state_int=\count148
+\l__regex_left_state_int=\count149
+\l__regex_right_state_int=\count150
+\l__regex_capturing_group_int=\count151
+\l__regex_min_pos_int=\count152
+\l__regex_max_pos_int=\count153
+\l__regex_current_pos_int=\count154
+\l__regex_start_pos_int=\count155
+\l__regex_success_pos_int=\count156
+\l__regex_current_char_int=\count157
+\l__regex_current_catcode_int=\count158
+\l__regex_last_char_int=\count159
+\l__regex_case_changed_char_int=\count160
+\l__regex_current_state_int=\count161
+\l__regex_step_int=\count162
+\l__regex_min_active_int=\count163
+\l__regex_max_active_int=\count164
+\l__regex_replacement_csnames_int=\count165
+\l__regex_match_count_int=\count166
+\l__regex_submatch_int=\count167
+\l__regex_zeroth_submatch_int=\count168
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count128
-\l__xparse_m_args_int=\count129
-\l__xparse_mandatory_args_int=\count130
-\l__xparse_processor_int=\count131
-\l__xparse_v_nesting_int=\count132
+\l__xparse_current_arg_int=\count169
+\l__xparse_m_args_int=\count170
+\l__xparse_mandatory_args_int=\count171
+\l__xparse_processor_int=\count172
+\l__xparse_v_nesting_int=\count173
 )
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload.sty
-Package: luaotfload 2014/08/10 v2.5-4 OpenType layout system
+Package: chemgreek 2015/04/09 v1.0 interface for upright greek letters for use i
+n chemistry (CN)
+\l__chemgreek_tmpa_int=\count174
+\g__chemgreek_tmpa_int=\count175
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 326.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 329.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 332.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newchemgreekmappingalias with sig. 'mm' on line 337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 340.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 343.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 373.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 467.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \activatechemgreekmapping with sig. 'sm' on line 476.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \selectchemgreekmapping with sig. 'm' on line 481.
+.................................................
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+Variant \str_if_eq:VnTF already defined; not changing it on line 57
+\l__mhchem_ce_distanceFromLastComma_int=\count176
+\mhchem@arrow@params=\toks20
+\mhchem@arrowlength@pgf=\skip56
+\mhchem@bondwidth=\skip57
+\mhchem@bondheight=\skip58
+\mhchem@smallbondwidth@tmpA=\skip59
+\mhchem@smallbondwidth@tmpB=\skip60
+\mhchem@smallbondwidth=\skip61
+\mhchem@bondtmp@minussidebearingleft=\skip62
+\mhchem@bondtmp@minussidebearingright=\skip63
+\mhchem@minispace@tmp=\skip64
+\mhchem@minibackspace@tmp=\skip65
+\l__mhchem_option_version_int=\count177
+\mhchem@option@minusmathsidebearingleft=\dimen154
+\mhchem@option@minusmathsidebearingright=\dimen155
+\mhchem@option@minustextsidebearingleft=\dimen156
+\mhchem@option@minustextsidebearingright=\dimen157
 
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
-Package: luatexbase 2013/05/11 v0.6 Resource management for the LuaTeX macro pro
-grammer
+*************************************************
+* mhchem warning: "options/no-version"
+* 
+* You did not specify a 'version' option for the mhchem package. Please write
+* \usepackage[version=4]{mhchem} in your preamble (or any lower number for
+* compatibility mode), because you might get different output with the same
+* input in future versions.
+*************************************************
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks21
+\footnotemargin=\dimen158
+\c@pp@next@reset=\count178
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+
+)
+(./derk.aux)
+\openout1 = derk.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen159
+\scratchbox=\box43
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen160
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/luatex.sty
-Package: luatex 2010/03/09 v0.4 LuaTeX basic definition package (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
-\et@xins=\count133
-)
-\LuT@AllocAttribute=\count277
-\LuT@AllocCatcodeTable=\count278
-\CatcodeTableStack=\count279
-\CatcodeTableIniTeX=\catcodetable1
-\CatcodeTableString=\catcodetable3
-\CatcodeTableOther=\catcodetable5
-\CatcodeTableLaTeX=\catcodetable7
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/luatex-loader.sty
-Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
-
-(/usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)))
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-compat.sty
-Package: luatexbase-compat 2011/05/24 v0.4 Compatibility tools for LuaTeX
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-modutils.s
-ty
-Package: luatexbase-modutils 2013/05/11 v0.6 Module utilities for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-loader.sty
-Package: luatexbase-loader 2013/05/11 v0.6 Lua module loader for LuaTeX
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.loader.lua)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/modutils.lua)
-Lua module: luatexbase-modutils 2013/05/11 0.6 Module utilities for LuaTeX
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-regs.sty
-Package: luatexbase-regs 2011/05/24 v0.4 Registers allocation for LuaTeX
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-attr.sty
-Package: luatexbase-attr 2013/05/11 v0.6 Attributes allocation for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/attr.lua)
-Lua module: luatexbase-attr 2013/05/11 0.6 Attributes allocation for LuaTeX
-\lltxb@attr@unsetvalue=\count280
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-cctb.sty
-Package: luatexbase-cctb 2013/05/11 v0.6 Catcodetable allocation for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/cctb.lua)
-Lua module: luatexbase-cctb 2013/05/11 0.6 Catcodetable allocation for LuaTeX
-\lltxb@catcodetable@alloc=\count281
-\CatcodeTableStack=\count282
-\CatcodeTableIniTeX=\luatexcatcodetable1
-\CatcodeTableString=\luatexcatcodetable3
-\CatcodeTableOther=\luatexcatcodetable5
-\CatcodeTableLaTeX=\luatexcatcodetable7
-\CatcodeTableLaTeXAtLetter=\luatexcatcodetable9
-\CatcodeTableExpl=\luatexcatcodetable11
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase-mcb.sty
-Package: luatexbase-mcb 2013/05/11 v0.6 Callback management for LuaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luatexbase/mcb.lua)
-Lua module: luatexbase-mcb 2013/05/11 0.6 register several functions in a callba
-ck
-))
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-main.lua)
-Lua module: luaotfload-main 2014/08/10 2.50003 OpenType layout system.
-
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-log.lua)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-fontloader.
-lua)(using write cache: /Users/michael/Library/texlive/2015/texmf-var/luatex-cac
-he/generic)(using read cache: /usr/local/texlive/2015/texmf-var/luatex-cache/gen
-eric /Users/michael/Library/texlive/2015/texmf-var/luatex-cache/generic)
-luatexbase-attr: luatexbase.attributes["luaotfload@kernpair"] = 1
-luatexbase-attr: luatexbase.attributes["luaotfload@ligacomp"] = 2
-luatexbase-attr: luatexbase.attributes["luaotfload@markbase"] = 3
-luatexbase-attr: luatexbase.attributes["luaotfload@markmark"] = 4
-luatexbase-attr: luatexbase.attributes["luaotfload@markdone"] = 5
-luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
-luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
-luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
-luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.045 seconds
-luatexbase-mcb: inserting 'luaotfload.node_processor'
-at position 1 in 'pre_linebreak_filter'
-luatexbase-mcb: inserting 'luaotfload.node_processor'
-at position 1 in 'hpack_filter'
-luatexbase-mcb: inserting 'luaotfload.find_vf_file'
-at position 1 in 'find_vf_file'
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-override.lu
-a)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-parsers.lua
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-configurati
-on.lua)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-status.lua)
-luaotfload | conf : Root cache directory is /Users/michael/Library/texlive/2015/
-texmf-var/luatex-cache/generic/names.
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-loaders.lua
-)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-database.lu
-a)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-colors.lua)
-luaotfload | conf : Root cache directory is /Users/michael/Library/texlive/2015/
-texmf-var/luatex-cache/generic/names.
-luatexbase-mcb: creating 'luaotfload.resolve_font' type 4
-luatexbase-mcb: creating 'luaotfload.patch_font' type 4
-luatexbase-mcb: resetting callback 'define_font'
-luatexbase-mcb: inserting 'luaotfload.define_font'
-at position 1 in 'define_font'
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-features.lu
-a)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-letterspace
-.lua)
-(/usr/local/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload-auxiliary.l
-ua)
-luatexbase-mcb: inserting 'luaotfload.aux.set_sscale_dimens'
-at position 1 in 'luaotfload.patch_font'
-luatexbase-mcb: inserting 'luaotfload.aux.patch_cambria_domh'
-at position 2 in 'luaotfload.patch_font'
-luatexbase-mcb: inserting 'luaotfload.aux.set_capheight'
-at position 3 in 'luaotfload.patch_font'
-luatexbase-mcb: inserting 'luaotfload.rewrite_fontname'
-at position 4 in 'luaotfload.patch_font')
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.lua)
-Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
-\l_fontspec_script_int=\count283
-\l_fontspec_language_int=\count284
-\l_fontspec_strnum_int=\count285
-\l__fontspec_tmpa_dim=\dimen256
-\l__fontspec_tmpb_dim=\dimen257
-\l__fontspec_tmpc_dim=\dimen258
-Variant \tl_gset:cV already defined; not changing it on line 71
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
-Package: fontspec-patches 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaT
-eX
-LaTeX Info: Redefining \em on input line 49.
-LaTeX Info: Redefining \emph on input line 57.
-LaTeX Info: Redefining \- on input line 60.
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \oldstylenums with sig. 'm' on line 155.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \liningnums with sig. 'm' on line 159.
-.................................................
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTe
-X
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu2enc.def
-File: eu2enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
-)
-LaTeX Font Info:    Try loading font information for EU2+lmr on input line 105.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmr.fd
-File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-luaotfload | db : Font names database loaded from /Users/michael/Library/texlive
-/2015/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(compiling luc: /
-usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman10-regula
-r.luc)(load luc: /Users/michael/Library/texlive/2015/texmf-var/luatex-cache/gene
-ric/fonts/otf/lmroman10-regular.luc))
-(/usr/local/texlive/2015/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
-ther characters in Unicode lower plane
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3enc.def
-File: t3enc.def 2001/12/31 T3 encoding
-(compiling luc: /usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf
-/lmromanslant10-regular.luc)(load luc: /Users/michael/Library/texlive/2015/texmf
--var/luatex-cache/generic/fonts/otf/lmromanslant10-regular.luc)(compiling luc: /
-usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman10-italic
-.luc)(load luc: /Users/michael/Library/texlive/2015/texmf-var/luatex-cache/gener
-ic/fonts/otf/lmroman10-italic.luc)(compiling luc: /usr/local/texlive/2015/texmf-
-var/luatex-cache/generic/fonts/otf/lmroman10-bold.luc)(load luc: /Users/michael/
-Library/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman10-bold.luc
-)
-LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
-
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmss.fd
-File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(compiling luc: /usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/ot
-f/lmsans10-regular.luc)(load luc: /Users/michael/Library/texlive/2015/texmf-var/
-luatex-cache/generic/fonts/otf/lmsans10-regular.luc))
-\tipaTiiicode=\count286
-\tipasavetokens=\toks21
-\tipachecktokens=\toks22
-)
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 45.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \fontspec with sig. 'om' on line 47.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmainfont with sig. 'om' on line 57.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setsansfont with sig. 'om' on line 67.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmonofont with sig. 'om' on line 77.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathrm with sig. 'om' on line 91.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setboldmathrm with sig. 'om' on line 99.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathsf with sig. 'om' on line 107.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathtt with sig. 'om' on line 115.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontfamily with sig. 'mom' on line 129.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontface with sig. 'mom' on line 144.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \defaultfontfeatures with sig. 't+om' on line 158.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \addfontfeatures with sig. 'm' on line 214.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontfeature with sig. 'mm' on line 225.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newAATfeature with sig. 'mmmm' on line 233.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newopentypefeature with sig. 'mmm' on line 241.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \aliasfontfeature with sig. 'mm' on line 265.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 274.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontscript with sig. 'mm' on line 279.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontlanguage with sig. 'mm' on line 305.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \DeclareFontsExtensions with sig. 'm' on line 325.
-.................................................
-Variant \prop_gput:cnV already defined; not changing it on line 708
-Variant \prop_gput:cnx already defined; not changing it on line 709
-\l__fontspec_tmp_int=\count287
-LaTeX Info: Redefining \itshape on input line 2156.
-LaTeX Info: Redefining \slshape on input line 2161.
-LaTeX Info: Redefining \scshape on input line 2166.
-LaTeX Info: Redefining \upshape on input line 2171.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(./derk.aux)
-\openout1 = derk.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 11.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
-File: t3cmr.fd 2001/12/31 TIPA font definitions
-)
-LaTeX Font Info:    ... okay on input line 11.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen259
-\scratchbox=\box256
-\nofMPsegments=\count289
-\nofMParguments=\count290
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen260
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
-\everyMPtoPDFconversion=\toks24
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
-
-
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
@@ -658,8 +485,11 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 
-(/usr/local/texlive/2015/texmf-dist/scripts/oberdiek/pdftexcmds.lua)
-\pdftexcmds@toks=\toks25
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/luatex-loader.sty
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(/usr/local/texlive/2015/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua))
+\pdftexcmds@toks=\toks24
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -688,109 +518,54 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 .................................................
-. fontspec info: "setup-math"
+. chemgreek info: "mapping-activated"
 . 
-. Adjusting the maths setup (use [no-math] to avoid this).
+. Activating mapping `default' on line 12.
 .................................................
-\symlegacymaths=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 11.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 11.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 11.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 11.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 11.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 11.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 11.
-LaTeX Font Info:    Redeclaring math accent \check on input line 11.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 11.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 11.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 11.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 11.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU2/lmr/m/n on input line 11.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU2/lmr/m/n on input line 11.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU2/lmr/m/n --> EU2/lmr/m/n on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU2/lmr/m/it on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU2/lmr/bx/n on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU2/lmss/m/n on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU2/lmtt/m/n on input line 11.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU2/lmr/m/n --> EU2/lmr/bx/n on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU2/lmr/bx/it on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU2/lmss/bx/n on input line 11.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU2/lmtt/bx/n on input line 11.
-(compiling luc: /usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf
-/lmroman12-regular.luc)(load luc: /Users/michael/Library/texlive/2015/texmf-var/
-luatex-cache/generic/fonts/otf/lmroman12-regular.luc)(compiling luc: /usr/local/
-texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman12-bold.luc)(load l
-uc: /Users/michael/Library/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf
-/lmroman12-bold.luc)(compiling luc: /usr/local/texlive/2015/texmf-var/luatex-cac
-he/generic/fonts/otf/lmromancaps10-regular.luc)(load luc: /Users/michael/Library
-/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc
-)(compiling luc: /usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/ot
-f/lmroman7-regular.luc)(load luc: /Users/michael/Library/texlive/2015/texmf-var/
-luatex-cache/generic/fonts/otf/lmroman7-regular.luc)(compiling luc: /usr/local/t
-exlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)(load 
-luc: /Users/michael/Library/texlive/2015/texmf-var/luatex-cache/generic/fonts/ot
-f/lmroman5-regular.luc)(compiling luc: /usr/local/texlive/2015/texmf-var/luatex-
-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /Users/michael/Library/t
-exlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(compi
-ling luc: /usr/local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmrom
-an6-regular.luc)(load luc: /Users/michael/Library/texlive/2015/texmf-var/luatex-
-cache/generic/fonts/otf/lmroman6-regular.luc) [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-derk.aux))
+<iostherm_arrows.pdf, id=1, 202.7575pt x 138.5175pt>
+File: iostherm_arrows.pdf Graphic file (type pdf)
+ <use iostherm_arrows.pdf>
+Package pdftex.def Info: iostherm_arrows.pdf used on input line 42.
+(pdftex.def)             Requested size: 202.757pt x 138.51715pt.
+
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+ [2<./iostherm_arrows.pdf>] [3] (./derk.aux))
 
 Here is how much of LuaTeX's memory you used:
- 15811 strings out of 494693
- 100000,383344 words of node,token memory allocated
- 382 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 3 kern, 6 attribute, 44 glue_spec, 6 attrib
-ute_list, 1 write nodes
-   avail lists: 2:10158,3:42,4:722,5:172,6:3356,7:180,9:63,10:350
- 19201 multiletter control sequences out of 65536+600000
- 48 fonts using 3476287 bytes
- 47i,8n,40p,1193b,161s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
-f></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.
-otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman7-regula
-r.otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-ita
-lic.otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-r
-egular.otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmromanc
-aps10-regular.otf></usr/local/texlive/2015/texmf-dist/fonts/opentype/public/lm/l
-mroman12-bold.otf><</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb>
-Output written on derk.pdf (2 pages, 44240 bytes).
+ 10887 strings out of 494693
+ 100000,319454 words of node,token memory allocated
+ 370 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 6 kern, 43 glue_spec, 1 write nodes
+   avail lists: 1:1,2:20,3:78,4:671,5:155,6:2705,7:191,9:159,10:287
+ 14350 multiletter control sequences out of 65536+600000
+ 44 fonts using 1740219 bytes
+ 42i,15n,47p,1186b,468s stack positions out of 5000i,500n,10000p,200000b,100000s
+<</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><<
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><</u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><</usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><</usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><</usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><</usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on derk.pdf (3 pages, 121938 bytes).
 
-PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+PDF statistics: 69 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
