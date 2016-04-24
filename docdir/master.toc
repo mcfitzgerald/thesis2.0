@@ -2,14 +2,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Definitions}{1}
+\contentsline {subsection}{\numberline {1.1}Ligand Binding and Cooperativity}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Models}{2}
+\contentsline {section}{\numberline {2}Definitions}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Data}{5}
+\contentsline {section}{\numberline {3}Models}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Bibliography}{9}
+\contentsline {section}{\numberline {4}Data}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix \numberline {A}Prism Code}{A1}
+\contentsline {section}{Bibliography}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix \numberline {B}R Code}{A3}
+\contentsline {section}{Appendices}{A1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Derivations}{A1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}One-Site Receptor}{A1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}R Code}{A2}
