@@ -3,20 +3,87 @@
 \subsection{One-Site Receptor}
 \label{app:klotz1}
 
+Start with the ligand binding reaction
+
 \begin{equation}
 \ce{R + L <=> RL}\
 \end{equation}
 
-\begin{equation}
-	\frac{\text{[RL]}}{\text{[R][L]}} = K_a
-\end{equation}
+and define the equilibrium association constant
 
 \begin{equation}
-	\bar{\nu} = \frac{\text{[bound ligand]}}{\text{[total receptor]}}
+K_1 = \frac{\text{[RL]}}{\text{[R][L]}} \quad \equiv \quad \text{[RL]} = K_1 \text{[R][L]}
 \end{equation}
 
+define the fractional saturation \(\bar{\nu}\) 
+
 \begin{equation}
-	\bar{\nu} = \frac{\text[RL]}{\text{[R]+[RL]}} = \frac{K_a \text{[L]}}{1+K_a \text[L]}
+	\bar{\nu} = \frac{\text{[bound ligand]}}{\text{[total receptor]}} = \frac{\text{[RL]}}{\text{[R]+[RL]}}
 \end{equation}
+
+use A.1.2 to substitute [RL] and factor out [R] to get
+
+\begin{equation}
+	\bar{\nu} = \frac{K_1 \text{[L]}}{1+K_1 \text{[L]}}
+\end{equation}
+
+\subsection{Multi-Site Receptors}
+
+\subsubsection*{Two-Site}
+
+For a two-site receptor, extend the one-site binding reaction with an additional ligand binding step
+
+\begin{equation}
+\ce{R + L + L <=> RL + L <=> RLL}\
+\end{equation}
+
+and define the second step equilibrium association constant
+
+\begin{equation}
+K_1 = \frac{\text{[RL]}}{\text{[R][L]}} \quad \text{and} \quad K_2 = \frac{\text{[RLL]}}{\text{[RL][L]}}
+\end{equation}
+
+add the new species to the fractional saturation definition including a factor of 2 (1 mole of RLL has 2 equivalents of L)
+
+\begin{equation}
+	\bar{\nu} = \frac{\text{[RL]} + 2 \text{[RLL]}}{\text{[R]} + \text{[RL]} + \text{[RLL]}}
+\end{equation}
+
+substitute [RL] and [RLL] using A.2.2, factor out [R], and normalize with a factor of \(\frac{1}{n}\), where \(n = \) the number of binding sites, in this case: 2 (this is required so that \(\bar{\nu}\) takes on values between 0 and 1)
+
+\begin{equation}
+	\bar{\nu} = \left(\frac{1}{2}\right) \frac{K_1 \text{[L]} + 2 K_1 K_2 \text{[L]}^2}{1 + K_1 \text{[L]} + K_1 K_2 \text{[L]}^2}
+\end{equation}
+
+\subsubsection*{\emph{n}-Sites}
+
+The above approach can be used to derive the binding equation for \(n\) binding sites
+
+\begin{equation}
+	\bar{\nu} = \left(\frac{1}{n}\right) \frac{K_1 \text{[L]} + 2 K_1 K_2 \text{[L]}^2 + \cdots + n K_1 K_2 \cdots K_n \text{[L]}^n}{1 + K_1 \text{[L]} + K_1 K_2 \text{[L]}^2 + \cdots + K_1 K_2 \cdots K_n \text{[L]}^n}
+\end{equation}
+
+\subsection{Criteria for Cooperativity}
+
+\subsubsection*{Cooperativity in two-site sytems}
+
+Consider a system in which there are two one-site receptors in equal proportion
+
+\begin{equation}
+	2  \bar{\nu} = \frac{K_a \text{[L]}}{1+K_a \text{[L]}} + \frac{K_b \text{[L]}}{1+K_b \text{[L]}}
+\end{equation}
+
+combining their separate fractional saturation equations by cross-multiplying yields
+
+\begin{equation}
+	2  \bar{\nu} = \frac{(K_a + K_b)\text{[L]} + 2 K_a K_b \text{[L]}^2}{1 + (K_a + K_b)\text{[L]} + K_a K_b \text{[L]}^2}
+\end{equation}
+
+substituting this with the assignments \((K_a + K_b) = K_1\) and \(K_a K_b = K_1 K_2\) returns the binding equation for a receptor with two sites (A.2.4)
+
+If the two receptors have equivalent receptor sites, i.e., \(K_a = K_b = k\), then \(K_1 = 2k\)
+
+
+
 
 \clearpage

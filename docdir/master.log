@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  24 APR 2016 12:47
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  24 APR 2016 17:14
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **master.tex
@@ -1148,26 +1148,28 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 ]
 (./Appendices/derivations.tex [1
 
-]) (./Appendices/r_code.tex [2
+] [2] [3]) (./Appendices/r_code.tex [4
 
-] [3])
-(./master.aux)
+]
+[5]) (./master.aux)
 Package logreq Info: Writing requests to 'master.run.xml'.
 
 \openout1 = master.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 26926 strings out of 494693
- 100000,662416 words of node,token memory allocated
- 401 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 5 kern, 47 glue_spec, 2 write nodes
-   avail lists: 1:3,2:30,3:329,4:2210,5:306,6:8003,7:1860,9:325,10:786
- 29711 multiletter control sequences out of 65536+600000
- 57 fonts using 2250339 bytes
+ 26928 strings out of 494693
+ 100000,794899 words of node,token memory allocated
+ 453 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 12 kern, 47 glue_spec, 2 write nodes
+   avail lists: 1:3,2:30,3:346,4:2193,5:299,6:8003,7:1860,9:325,10:786
+ 29712 multiletter control sequences out of 65536+600000
+ 58 fonts using 2289555 bytes
  57i,15n,54p,1175b,905s stack positions out of 5000i,500n,10000p,200000b,100000s
 <</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+<</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+<</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><<
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><</u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><</usr
@@ -1178,10 +1180,10 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><</usr/local
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><</usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on master.pdf (18 pages, 166386 bytes).
+Output written on master.pdf (20 pages, 185657 bytes).
 
-PDF statistics: 127 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+PDF statistics: 141 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
