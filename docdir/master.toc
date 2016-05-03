@@ -20,6 +20,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.2}Multi-Site Receptors}{A1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3}Criteria for Cooperativity}{A2}
+\contentsline {subsection}{\numberline {A.3}Formalizing Cooperativity}{A2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B}R Code}{A4}
