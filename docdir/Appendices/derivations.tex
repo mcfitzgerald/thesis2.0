@@ -67,7 +67,7 @@ The above approach can be used to derive the binding equation for \(n\) binding 
 
 \subsubsection*{Cooperativity in two-site sytems}
 
-As discussed in the introduction, homotropic cooperativity is a change in affinity at an otherwise identical binding site on the same receptor upon binding of the same ligand. We can develop a formal definition of cooperativity using binding equations. The simplest system in which cooperativity can arise is a receptor with two binding sites. It is useful to first consider a system in which there are two one-site receptors in equal proportion
+As discussed in the introduction, homotropic cooperativity is a change in affinity at an otherwise identical binding site on the same receptor upon binding of the same ligand. We can develop a formal definition of cooperativity using binding equations. The simplest system in which cooperativity can arise is a receptor with two binding sites. It is useful to first consider a system in which there are two one-site receptors in equal proportion.\supercite{wyman_binding_1990}
 
 \begin{equation}
 	2  \bar{\nu} = \frac{K_a \text{[L]}}{1+K_a \text{[L]}} + \frac{K_b \text{[L]}}{1+K_b \text{[L]}}
@@ -103,6 +103,54 @@ If binding data for a receptor that has two sites with invariant affinity is fit
 
 If the data were fit and \(K_1 > 4 K_2 \) or \(K_1 < 4 K_2 \) (again, given a margin of error), this would indicate negative or positive cooperativity, respectively.
 
+\subsubsection*{Cooperativity in \emph{n}-site systems}
+
+\begin{equation}
+n \bar{\nu} =	\frac{K_1 \text{[L]}}{1+K_1 \text{[L]}} + \frac{K_2 \text{[L]}}{1+K_2 \text{[L]}} + \cdots + \frac{K_n \text{[L]}}{1+K_n \text{[L]}}
+\end{equation}
+
+This is the numerator:
+\begin{equation}
+	\sum_{i=1}^{n} K_i \prod_{j=1}^{n} (1 + K_{j \neq i})
+\end{equation}
+
+This is the denominator:
+\begin{equation}
+	\prod_{i=1}^{n}(1 + K_n)
+\end{equation}
+
+If all \(K\)'s are equal
+
+\begin{equation}
+	(1 + k)^n
+\end{equation}
+
+This will expand to a polynomial of order \(n\) 
+
+In the above example \(n = 2\)
+
+We are interested in the groupings of \(K\)'s when the above is expanded for \(n\) sites.
+
+\begin{equation}
+	(1 + k)^n = 1 + \sum_{i=1}^{n} c_i k^i
+\end{equation}
+
+Where 
+
+\begin{equation}
+	c_i = \frac{n!}{i! (n-i)!}
+\end{equation}
+
+\begin{equation}
+	c_i k^i = K_1 K_2 \cdots K_i 
+\end{equation}
+
+\begin{equation}
+	K_i = \frac{c_i k^i}{c_{i-1} k^{i-1}} = \left(\frac{n - i + 1}{i}\right) k
+\end{equation}
+
+The equation above can be used to determine expected association constants for a multi-site receptor assuming equal affinity at all sites, and deviations from those expected values can be used to determine cooperativity.
 
 
+	
 \clearpage

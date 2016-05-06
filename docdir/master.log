@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  3 MAY 2016 19:03
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  6 MAY 2016 15:50
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **master.tex
@@ -1148,10 +1148,10 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 ]
 (./Appendices/derivations.tex [1
 
-] [2] [3]) (./Appendices/r_code.tex [4
+] [2] [3] [4] [5]) (./Appendices/r_code.tex
+[6
 
-]
-[5]) (./master.aux)
+] [7]) (./master.aux)
 Package logreq Info: Writing requests to 'master.run.xml'.
 
 \openout1 = master.run.xml
@@ -1160,9 +1160,9 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 Here is how much of LuaTeX's memory you used:
  26928 strings out of 494693
  100000,794899 words of node,token memory allocated
- 472 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 47 glue_spec, 2 write nodes
-   avail lists: 1:3,2:30,3:350,4:2189,5:296,6:8003,7:1860,9:325,10:786
+ 522 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 23 kern, 47 glue_spec, 2 write nodes
+   avail lists: 1:3,2:30,3:360,4:2179,5:288,6:8003,7:1860,9:325,10:786
  29712 multiletter control sequences out of 65536+600000
  58 fonts using 2289555 bytes
  57i,15n,54p,1175b,905s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1180,10 +1180,10 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><</usr/local
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><</usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on master.pdf (20 pages, 187596 bytes).
+Output written on master.pdf (22 pages, 193022 bytes).
 
-PDF statistics: 141 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+PDF statistics: 149 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

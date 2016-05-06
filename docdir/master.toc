@@ -22,4 +22,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.3}Formalizing Cooperativity}{A2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}R Code}{A4}
+\contentsline {section}{\numberline {B}R Code}{A6}
