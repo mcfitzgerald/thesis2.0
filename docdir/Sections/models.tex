@@ -1,9 +1,72 @@
-\section{Models}
-\blindtext[5]
-\\ The lazy brown dog jumped over the office chairs fulfilling the prophecy.\supercite{notides_positive_1981, brandt_cooperativity_1997}
-\begin{figure}
+\section{Model for a Dimerizing Receptor System}
+\subsection{Schematic Representation}
+\begin{figure}[!h]
 \centering
 \input{./Figures/wyman_model.tex}
-\caption{this is a nugget model proposed by Wyman and Gill. \supercite{wyman_binding_1990}}
+\caption{Model proposed by Wyman and Gill for a receptor system that dimerizes.\supercite{wyman_binding_1990}}
+\label{fig:wyman_model}
 \end{figure}
-\blindtext[5]
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+Symbol & Species \\
+\midrule
+L & free ligand \\
+R & free receptor monomer \\
+RL & occupied receptor monomer \\
+(RR) & free receptor dimer \\
+(RR)L & singly-occupied receptor dimer \\
+(RR)LL & fully-occupied receptor dimer \\
+\bottomrule
+\end{tabular}
+\caption{Description of species in model shown in Fig. \ref{fig:wyman_model}}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+Association Constant & Reaction \\
+\midrule
+\(K_{11}\) & \ce{R + L <=> RL} \\
+\(K_{21}\) & \ce{(RR) + L <=> (RR)L} \\
+\(K_{22}\) & \ce{(RR)L + L <=> (RR)LL} \\
+\(D_{20}\) & \ce{R + R <=> (RR)} \\
+\(D_{21}\) & \ce{R + RL <=> (RR)L} \\
+\(D_{22}\) & \ce{RL + RL <=> (RR)LL}  \\
+\bottomrule
+\end{tabular}
+\caption{Description of constant in model shown in Fig. \ref{fig:wyman_model}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcl}
+\toprule
+Species & & Reaction \\
+\midrule
+{[(RR)]} & = & \(D_{20}[\text{R}]^2\) \\
+{[RL]} & = & \(K_{11}\text{[R][L]}\) \\
+{[(RR)L]} & = & \(K_{21}\text{[(RR)][L]} \equiv K_{21} D_{20}[\text{R}]^2[\text{L}]\) \\
+{[(RR)LL]} & = & \(K_{22}\text{[(RR)L][L]} \equiv K_{21}K_{20}D_{20}[\text{R}]^2[\text{L}]^2\) \\
+\bottomrule
+\end{tabular}
+\caption{specs}
+\end{table}
+
+
+\subsection{Fractional Saturation Equation}
+We can construct the equation for the fractional saturation for the system described in Fig. \ref{fig:wyman_modl} expressing the species in terms of their equilibrium constants.
+
+\begin{equation}
+\bar{\nu}=\frac{[\text{RL}] + [\text{(RR)L}] + 2[\text{(RR)LL]}}{[\text{R}]+ [\text{RL}] + 2[\text{(RR)}] + 2[\text{(RR)L}] + 2[\text{(RR)LL}]}
+\end{equation}
+
+\begin{equation}
+\bar{\nu}=\frac{K_{11}\text{[L]} + K_{21}D_{20}\text{[R][L]} + 2 K_{21} K_{22} D_{20}\text{[R]}\text{[L]}^2}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]} + 2 K_{21} D_{20} \text{[R][L]} + 2 K_{21} K_{22} D_{20} \text{[R]}\text{[L]}^2}
+\end{equation}
+
+
