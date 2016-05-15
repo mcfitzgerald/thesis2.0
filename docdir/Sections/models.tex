@@ -8,6 +8,7 @@
 \end{figure}
 
 \begin{table}[h]
+\label{tab:spec}
 \centering
 \begin{tabular}{lr}
 \toprule
@@ -54,19 +55,74 @@ Species & & Reaction \\
 {[(RR)LL]} & = & \(K_{22}\text{[(RR)L][L]} \equiv K_{21}K_{20}D_{20}[\text{R}]^2[\text{L}]^2\) \\
 \bottomrule
 \end{tabular}
-\caption{specs}
+\caption{Table of species}
+\label{tab:spec}
 \end{table}
 
 
 \subsection{Fractional Saturation Equation}
-We can construct the equation for the fractional saturation for the system described in Fig. \ref{fig:wyman_modl} expressing the species in terms of their equilibrium constants.
+We can construct the equation for the fractional saturation for the system described in Fig. \ref{fig:wym_mod} expressing the species in terms of their equilibrium constants as catalogued in Table \ref{tab:spec}
+
 
 \begin{equation}
 \bar{\nu}=\frac{[\text{RL}] + [\text{(RR)L}] + 2[\text{(RR)LL]}}{[\text{R}]+ [\text{RL}] + 2[\text{(RR)}] + 2[\text{(RR)L}] + 2[\text{(RR)LL}]}
 \end{equation}
 
-\begin{equation}
+\begin{equation} \label{eq:wym_fsat}
 \bar{\nu}=\frac{K_{11}\text{[L]} + K_{21}D_{20}\text{[R][L]} + 2 K_{21} K_{22} D_{20}\text{[R]}\text{[L]}^2}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]} + 2 K_{21} D_{20} \text{[R][L]} + 2 K_{21} K_{22} D_{20} \text{[R]}\text{[L]}^2}
 \end{equation}
+
+\subsection{\emph{p-bar} notation}
+
+To continue our analysis it will be useful to introduce the following notation:
+
+\begin{equation}
+	\bar{p}_n \bar{\nu}_{n}
+\end{equation}
+
+where \(\bar{p}_n\) is the fractional population of the \emph{n}-mer species, and \(\bar{\nu}_n\) is the fractional saturation of that species. In the case of a dimerizing system, the apparent fractional saturation of the system can be decomposed into the fractional saturations of the monomer and dimer populations:
+
+\begin{equation}
+	\bar{\nu}_{\text{sys}} = \bar{p}_1 \bar{\nu}_1 + \bar{p}_2 \bar{\nu}_2 \quad \text{(dimerizing receptor system)}
+\end{equation}
+
+where \(\bar{p}_1\) is the fraction of the population of receptors that is in monomeric form, i.e., \(\frac{\text{monomeric species}}{\text{all species}}\), and \(\bar{\nu}_1\) is fractional saturation of the monomeric receptor. Likewise, \(\bar{p}_2\) is the fraction that is in dimeric form and \(\bar{\nu}_2\) is the fractional saturation of the dimeric receptor. This form is easily extended to higher order aggregating systems:
+
+\begin{equation}
+	\bar{\nu}_{\text{sys}} = \bar{p}_1 \bar{\nu}_1 + \bar{p}_2 \bar{\nu}_2 + \cdots + \bar{p}_n \bar{\nu}_n \quad \text{(general aggregating system)}
+\end{equation}
+
+
+This form is particularly useful when the equation for \(\bar{\nu}_n\) takes on one the canonical forms derived in the appendix because it allows us to set strict criteria for cooperativity. We can show that the fractional saturation describing the dimerizing system, equation \ref{eq:wym_fsat}, takes on this form.
+
+First we construct \(\bar{p}_1\) and \(\bar{p}_2\) using the species in Table \ref{tab:spec}:
+
+\begin{equation}
+	\begin{split}
+	\bar{p}_1& = \frac{\text{[R]} + \text{[RL]}}{\text{[R]} + \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}} \\[3ex]
+	& = \frac{1 + K_{11}\text{[L]}}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]}(1 + K_{21}\text{[L]}(1 + K_{22}\text{[L]}))}
+	\end{split}
+ \end{equation}
+ 
+ 
+ \begin{equation}
+	 \begin{split}
+	 \bar{p}_2& = \frac{2 \text{[RR]} + 2 \text{[RRL]} + 2 \text{[RRLL]}}{\text{[R]} +  \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}} \\[3ex]
+	 & = \frac{2 D_{20}\text{[R]}(1 + K_{21}\text{[L]}(1 + K_{22}\text{[L]}))}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]}(1 + K_{21}\text{[L]}(1 + K_{22}\text{[L]}))}
+	 \end{split}
+\end{equation}
+
+\begin{equation}
+	\begin{split}
+	\bar{\nu}_1& = \frac{\text{[RL]}}{\text{[R]} + \text{[RL]}} \\[3ex]
+	\text{this is text} \\[3ex] 
+	& = \frac{K_{11}\text{[L]}}{1 + K_{11}\text{[L]}}
+	\end{split}
+\end{equation}
+
+\begin{equation}
+	\begin{split}
+		\bar{}
+
 
 
