@@ -72,7 +72,7 @@ We can construct the equation for the fractional saturation for the system descr
 \bar{\nu}=\frac{K_{11}\text{[L]} + K_{21}D_{20}\text{[R][L]} + 2 K_{21} K_{22} D_{20}\text{[R]}\text{[L]}^2}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]} + 2 K_{21} D_{20} \text{[R][L]} + 2 K_{21} K_{22} D_{20} \text{[R]}\text{[L]}^2}
 \end{equation}
 
-\subsection{\emph{p-bar} notation}
+\subsection{\emph{p-bar} Notation}
 
 To continue our analysis it will be useful to introduce the following notation:
 
@@ -97,32 +97,50 @@ This form is particularly useful when the equation for \(\bar{\nu}_n\) takes on 
 
 First we construct \(\bar{p}_1\) and \(\bar{p}_2\) using the species in Table \ref{tab:spec}:
 
-\begin{equation}
+\begin{align}
 	\begin{split}
 	\bar{p}_1& = \frac{\text{[R]} + \text{[RL]}}{\text{[R]} + \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}} \\[3ex]
 	& = \frac{1 + K_{11}\text{[L]}}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]}(1 + K_{21}\text{[L]}(1 + K_{22}\text{[L]}))}
 	\end{split}
- \end{equation}
- 
- 
- \begin{equation}
+	\\[3ex]
 	 \begin{split}
 	 \bar{p}_2& = \frac{2 \text{[RR]} + 2 \text{[RRL]} + 2 \text{[RRLL]}}{\text{[R]} +  \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}} \\[3ex]
 	 & = \frac{2 D_{20}\text{[R]}(1 + K_{21}\text{[L]}(1 + K_{22}\text{[L]}))}{1 + K_{11}\text{[L]} + 2 D_{20}\text{[R]}(1 + K_{21}\text{[L]}(1 + K_{22}\text{[L]}))}
 	 \end{split}
-\end{equation}
-
-\begin{equation}
+\\[3ex]
 	\begin{split}
 	\bar{\nu}_1& = \frac{\text{[RL]}}{\text{[R]} + \text{[RL]}} \\[3ex]
-	\text{this is text} \\[3ex] 
 	& = \frac{K_{11}\text{[L]}}{1 + K_{11}\text{[L]}}
 	\end{split}
-\end{equation}
-
-\begin{equation}
+\\[3ex]
 	\begin{split}
-		\bar{}
+		\bar{\nu}_2& = \frac{\text{[(RR)L]} + 2 \text{(RR)LL}}{2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL}]} \\[3ex]
+		& = \frac{K_{21} D_{20} \text{[L]} \text{[R]}^2 + 2 K_{21} K_{22} D_{20} \text{[L]}^2 \text{[R]}^2}{2 D_{20} \text{[R]}^2 + 2 K_{21} D_{20} \text{[L]} \text{[R]}^2 +  2 K_{21} K_{22} D_{20} \text{[L]}^2 \text{[R]}^2} \\[3ex]
+		& = \left(\frac{1}{2}\right) \frac{K_1 \text{[L]} + 2 K_1 K_2 \text{[L]}^2}{1 + K_1 \text{[L]} + K_1 K_2 \text{[L]}^2}
+	\end{split}
+\end{align}
+
+
+Crunching through the algebra, it's clear that \(\bar{p}_1 \bar{\nu}_1 + \bar{p}_2 \bar{\nu}_2  = \bar{\nu}_{sys}\).
+
+\begin{align}
+	\begin{split}
+	\bar{p}_1 \bar{\nu}_1& = \frac{\text{[R]} + \text{[RL]}}{\text{[R]} + \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}} \\[2ex]
+	& \quad \times \frac{\text{[RL]}}{\text{[R]} + \text{[RL]}} \\[3ex]
+	&= \frac{\text{[RL]}}{\text{[R]} + \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}}
+	\end{split}
+\\[3ex]
+	\begin{split}
+		\bar{p}_2 \bar{\nu}_2& = \frac{2 \text{[RR]} + 2 \text{[RRL]} + 2 \text{[RRLL]}}{\text{[R]} +  \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}} \\[2ex]
+		& \quad \times \frac{\text{[(RR)L]} + 2 \text{(RR)LL}}{2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL}]} \\[3ex]
+		&= \frac{\text{[(RR)L]} + 2 \text{(RR)LL}}{\text{[R]} +  \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}}
+	\end{split}
+\\[3ex]
+\bar{p}_1 \bar{\nu}_1 + \bar{p}_2 \bar{\nu}_2& = \frac{\text{[RL]} + \text{[(RR)L]} + 2 \text{(RR)LL}}{\text{[R]} + \text{[RL]} + 2 \text{[(RR)]} + 2 \text{[(RR)L]} + 2 \text{[(RR)LL]}}
+\end{align}
+
+
+		
 
 
 
