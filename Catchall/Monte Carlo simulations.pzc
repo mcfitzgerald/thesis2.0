@@ -1,0 +1,34 @@
+/*Monte Carlo analysis
+
+Before running this script, you must have open a Prism
+project with the following:
+   --The first sheet in the results section is a 
+     data simulation.
+  --The second sheet in the results section is a nonlinear
+    regression curve fit of the simulated data. 
+  --The  first data table in this file must be formatted as a 
+    one-way table, and be blank.
+
+The sample script below contains some information in
+brackets [like this]. You need to replace these
+placeholders (including the brackets) before running
+the script.
+
+*/
+
+
+Table Prism 1 Clear
+
+ForEach 333
+  GoTo R 1
+  Regenerate
+  GoTo R 2  
+  Wtable "p-val", 4, 8
+  Wtable "K11 coop", 11, 8
+  Wtable "L20 coop", 12, 8
+  Wtable "K21 coop", 13, 8
+  Wtable "K22 coop", 14, 8
+  Wtable "K11 nocoop", 24, 8
+  Wtable "L20 nocoop", 25, 8
+  Wtable "K21 nocoop", 23, 8
+Next
