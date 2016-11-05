@@ -95,3 +95,6 @@ def wyman_obj_vecmin(parm,lig,data,rtot,eps=None):
         
 def lnprob_lmfit(parm,lig,data,rtot,eps):
     return -0.5 * np.sum((wyman_obj_lmfit(parm,lig,data,rtot,eps))**2 + np.log(np.concatenate(2 * np.pi * eps**2)))
+    
+def lnprob_vecmin(parm,lig,data,rtot,eps):
+    return -0.5 * np.sum((wyman_obj_vecmin(parm,lig,data,rtot,eps))**2 + np.log(np.concatenate(2 * np.pi * eps**2)))
