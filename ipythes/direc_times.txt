@@ -1,0 +1,36 @@
+total 4216
+-rw-r--r--   1 michael  staff       0 Nov 29 19:20 direc_times.txt
+-rw-r--r--   1 michael  staff    2148 Nov 29 17:38 fitter_env.yml
+drwxr-xr-x  26 michael  staff     884 Nov 21 21:47 Wild_Type_Fit
+-rw-r--r--   1 michael  staff   52878 Nov 14 21:26 dict_work.ipynb
+-rw-r--r--   1 michael  staff    3925 Nov 14 21:25 save.file.npy
+-rw-r--r--   1 michael  staff       0 Nov 14 20:37 sv.file
+-rw-r--r--   1 michael  staff    4033 Nov 14 20:37 sv.file.npy
+-rw-r--r--   1 michael  staff       0 Nov 14 20:35 lerp.txt
+-rw-r--r--   1 michael  staff    2729 Nov 13 22:16 save.p
+-rw-r--r--@  1 michael  staff   15619 Nov 13 22:09 test.pdf
+drwxr-xr-x  33 michael  staff    1122 Nov 12 08:10 nbs
+-rw-r--r--   1 michael  staff  322626 Oct 20 22:13 finalsene.ipynb
+-rw-r--r--   1 michael  staff  211646 Oct 20 21:55 finally_making_sense.ipynb
+-rw-r--r--   1 michael  staff     145 Oct 19 18:27 rtotswt.csv
+-rw-r--r--   1 michael  staff  170762 Oct 19 18:12 dataframefromcsv1.ipynb
+-rw-r--r--   1 michael  staff  114657 Oct 19 17:23 getting_to_dict-of-dfs.ipynb
+-rw-r--r--   1 michael  staff     369 Oct 19 06:53 1200K.csv
+-rw-r--r--   1 michael  staff     375 Oct 19 06:53 187K.csv
+-rw-r--r--   1 michael  staff     327 Oct 19 06:53 20K.csv
+-rw-r--r--   1 michael  staff     368 Oct 19 06:53 256K.csv
+-rw-r--r--   1 michael  staff     404 Oct 19 06:53 46K.csv
+-rw-r--r--   1 michael  staff   10906 Oct 19 06:15 derp.csv
+-rw-r--r--   1 michael  staff  173442 Oct 17 21:44 panders.ipynb
+drwxr-xr-x   4 michael  staff     136 Oct 17 19:37 __pycache__
+-rw-r--r--   1 michael  staff    8666 Oct 15 11:29 All_WT_for_coopfit_tsv.csv
+-rw-r--r--   1 michael  staff   78923 Oct 11 20:12 Multifit Exampls.ipynb
+-rw-r--r--   1 michael  staff     809 Oct 11 20:12 ligmods.py
+-rw-r--r--@  1 michael  staff     220 Oct 11 20:12 minfuncs.py
+-rw-r--r--@  1 michael  staff      34 Oct 11 20:12 mult_obj.py
+-rw-r--r--@  1 michael  staff    2109 Oct 11 20:12 multifit.py
+-rw-r--r--@  1 michael  staff     514 Oct 11 20:12 objfun.py
+-rw-r--r--   1 michael  staff   18034 Oct 11 20:12 emcee site example.ipynb
+-rw-r--r--   1 michael  staff  747536 Oct 11 20:12 emcee_lmfit_ex.ipynb
+-rw-r--r--@  1 michael  staff     363 Oct 11 20:12 klotzfitter.py
+-rw-r--r--   1 michael  staff  146575 Oct 11 20:12 krinkle.ipynb

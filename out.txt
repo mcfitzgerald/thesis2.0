@@ -1,0 +1,272 @@
+Catchall/2009 Wild Type.ods
+Catchall/2009_WT_20K.txt
+Catchall/All_WT_for_coopfit_tsv.txt
+Catchall/All_WT_glob_comp.pzfx
+Catchall/All_WT_glob_comp_working.pzfx
+Catchall/All_kindead.pdf
+Catchall/All_kindead.png
+Catchall/Copy of Copy of Allwtagain.png
+Catchall/Data 3.png
+Catchall/Diagrams.aux
+Catchall/Diagrams.log
+Catchall/Diagrams.pdf
+Catchall/Diagrams.synctex.gz
+Catchall/Example-graphics.pzfx
+Catchall/KD_coop_0.05_k11-0.1761_l20-43.63_k21-4.828_k22-0.6557.ods
+Catchall/KD_ncoop_0.001_k11-0.1785_l20-55.55_k21-3.242_k22-0.8105.ods
+Catchall/Layout 1.png
+Catchall/Monte Carlo simulations.pzc
+Catchall/Notides_81.ods
+Catchall/Pike-08-WT-y-err-scale.pzfx
+Catchall/Pike-08-WT.pzfx
+Catchall/Pike_08_non-dim.pzfx
+Catchall/Pike_09_WT_all.pzfx
+Catchall/Pike_09_WT_all_working.pzfx
+Catchall/Pike_09_WT_newmods.pzfx
+Catchall/Pike_2009_kindead.pzfx
+Catchall/Pike_klotz.pzfx
+Catchall/Pike_mixmod.pzfx
+Catchall/Pike_use-calcd-rconcs.pzfx
+Catchall/Pike_working.pzfx
+Catchall/R_globalanal_session_text.txt
+Catchall/Results_Overview.odt
+Catchall/Results_Overview.pdf
+Catchall/SIm_kindead_coop.pzfx
+Catchall/Sim_kindead_nocoop.pzfx
+Catchall/Sim_wt_coop.pzfx
+Catchall/Sim_wt_nocoop.pzfx
+Catchall/Texx
+Catchall/Untitled 1.ods
+Catchall/Untitled 2.pzfx
+Catchall/Untitled.aux
+Catchall/Untitled.log
+Catchall/Untitled.pdf
+Catchall/Untitled.synctex.gz
+Catchall/WT_coop_k11-3.747_l20-283.4_k21-1.814_k22-0.1155.ods
+Catchall/WT_nocoop_k11-3.921_l20-394_k21-1.328_k22-0.332.ods
+Catchall/WT_nocoop_k11-3.921_l20-394_k21-1.328_k22-0.332_unknown-change.ods
+Catchall/alg_for_adv.nb
+Catchall/alg_for_draft.nb
+Catchall/algebra.nb
+Catchall/all_kin_imp.pzfx
+Catchall/all_kin_imp_working.pzfx
+Catchall/allwtcompareed_and_mixmodels.pzfx
+Catchall/approach_data_overview.pdf
+Catchall/approach_results_overvew_v1.pdf
+Catchall/approach_results_overview.pdf
+Catchall/approach_results_overview_v2.pdf
+Catchall/better_mix_model.txt
+Catchall/bindshift_onesite.nb
+Catchall/chemeq_example.nb
+Catchall/confint_sims_kindead.pzfx
+Catchall/confint_sims_wt.pzfx
+Catchall/coop_bindshift.nb
+Catchall/derk.aux
+Catchall/derk.log
+Catchall/derk.pdf
+Catchall/derk.synctex.gz
+Catchall/derk.tex
+Catchall/derk.toc
+Catchall/dim_bound_frac_only.pzfx
+Catchall/doc1.odt
+Catchall/draft_big.odt
+Catchall/ec50ex.pzfx
+Catchall/est.pzfx
+Catchall/est_r0.ods
+Catchall/estro_fits_sims.pzfx
+Catchall/estroplots.ods
+Catchall/for_estrogen.ods
+Catchall/fracsat1.odf
+Catchall/funcs.nb
+Catchall/global_anal.RData
+Catchall/global_anal.RHist
+Catchall/iostherm_arrows.pdf
+Catchall/isotherm_classic.pdf
+Catchall/isotherm_small.pdf
+Catchall/isotherm_smaller.pdf
+Catchall/isotherm_smallest.pdf
+Catchall/jupy-prismsm.pzfx
+Catchall/kdcoopsim.pzfx
+Catchall/kdcoopsim_working.pzfx
+Catchall/kdnocoopsim.pzfx
+Catchall/kdnocoopsim_working.pzfx
+Catchall/kindeadmathsims.ods
+Catchall/kinimp and wt.pzfx
+Catchall/kintrunc1_r0s.txt
+Catchall/kintrunc2_r0s.txt
+Catchall/klotz1.pzfx
+Catchall/limits_wyman.nb
+Catchall/linse-proof.nb
+Catchall/mathematica script notes.txt
+Catchall/mc_sim_results.pzfx
+Catchall/mixmod_pike08.pzfx
+Catchall/monte.pzfx
+Catchall/monte_sim.rtf
+Catchall/nondim_pike_08.pzfx
+Catchall/not_sure.pzfx
+Catchall/notez.rtf
+Catchall/notides_play.pzfx
+Catchall/notides_repull.pzfx
+Catchall/notidessime.pzfx
+Catchall/pike09wt_fixed_m0_eqn.pzfx
+Catchall/pike11_wt.pzfx
+Catchall/pike_08_fig2.pzfx
+Catchall/pike_09_fig1.pzfx
+Catchall/pike_again.pzfx
+Catchall/pike_eqn_for_R.txt
+Catchall/predict-and-measured.pzfx
+Catchall/prismeqns.txt
+Catchall/r0s_for_kinimp.txt
+Catchall/r0s_for_wt.txt
+Catchall/r_demo.pzfx
+Catchall/res1.png
+Catchall/results_summary.ods
+Catchall/rfree_eqn.nb
+Catchall/rootfunc_simpl_wym.nb
+Catchall/rootfunc_wym.nb
+Catchall/scatchards.pzfx
+Catchall/script.nb
+Catchall/script_ORIGINAL.nb
+Catchall/script_working.nb
+Catchall/script_wym.nb
+Catchall/sim_results_compiled.ods
+Catchall/sim_results_more.pzfx
+Catchall/simcompileworking.ods
+Catchall/sims2.ods
+Catchall/sims_of_all_wt.pzfx
+Catchall/simulation_prismplot.pzfx
+Catchall/simulation_results_plots.pzfx
+Catchall/single_site_shifting.pzfx
+Catchall/thesis outline.odt
+Catchall/twosite_coop_shift-mathematica.pzfx
+Catchall/working_explanation.odt
+Catchall/wt fits.png
+Catchall/wtcoopsim.pzfx
+Catchall/wtcoopsim_working.pzfx
+Catchall/wtmathsims.ods
+Catchall/wtnocoopsim.pzfx
+Catchall/wtnocoopsim_working.pzfx
+Catchall/wym_0.01_k11-3.914_l20-313.9_k21-2.951_k22-0.1136.csv
+Catchall/wym_0.01_k11-3.914_l20-313.9_k21-2.951_k22-0.1136.ods
+Catchall/wym_0.1_k11-3.914_l20-313.9_k21-2.951_k22-0.1136.csv
+Catchall/wym_1_k11-3.914_l20-313.9_k21-2.951_k22-0.1136.csv
+Catchall/wymredo.nb
+Data/csvs
+Data/directs
+Data/residuals
+Data/routs
+Data/semilogs
+Data/testing
+Mathematica Sims/EGFR
+Mathematica Sims/Estrogen
+Sandbox/Pike_11f_3b_12k DirectFit.pdf
+Sandbox/Pike_11f_3b_12k Residual1.pdf
+Sandbox/Pike_11f_3b_12k Residual2.pdf
+Sandbox/Pike_11f_3b_12k SemiLog.pdf
+Sandbox/Pike_11f_3b_12k.csv
+Sandbox/Pike_11f_3b_1600k.csv
+Sandbox/crunch_ed.r
+Sandbox/loopscript.sh
+Sandbox/playgroun.RHist
+Sandbox/playground.RData
+Scripts/adair1_sim.r
+Scripts/adair2_sim.r
+Scripts/bind_script_r
+Scripts/binding_sim.r
+Scripts/cleancsv.r
+Scripts/crunch
+Scripts/crunch.r
+Scripts/extract.sh
+Scripts/loop.sh
+Scripts/loopscript
+Scripts/loopscript.sh
+Scripts/slice_csv.r
+Simulations/adair1_sim.r
+Simulations/adair2_ext_sim.r
+Simulations/adair2_sim.r
+Simulations/additive_sim.r
+Simulations/binding_sim.r
+Simulations/mix2_sim.r
+Simulations/mix_sim.r
+Simulations/sim_test.RData
+Simulations/sim_test.RHist
+WT_k_v_Rno/K_vs_R.RData
+WT_k_v_Rno/K_vs_R.RHist
+Writing/doc_test.aux
+Writing/doc_test.log
+Writing/doc_test.pdf
+Writing/doc_test.synctex.gz
+Writing/doc_test.tex
+Writing2/document.aux
+Writing2/document.log
+Writing2/document.pdf
+Writing2/document.synctex.gz
+Writing2/document.tex
+Writing2/img
+Writing2/mystyle.sty
+Writing2/tex
+charts/K721A.png
+charts/L680N.png
+charts/Screen Shot 2016-02-07 at 4.20.20 PM.png
+charts/Screen Shot 2016-02-07 at 4.28.53 PM.png
+charts/Screen Shot 2016-02-09 at 5.53.49 AM.png
+charts/Screen Shot 2016-02-09 at 5.53.51 AM.png
+charts/Screen Shot 2016-02-09 at 6.45.10 AM.png
+charts/Screen Shot 2016-02-24 at 6.21.10 PM.png
+charts/Screen Shot 2016-03-14 at 6.43.53 PM.png
+charts/Screen Shot 2016-03-14 at 6.46.47 PM.png
+charts/Screen Shot 2016-03-14 at 6.55.59 PM.png
+charts/Screen Shot 2016-03-14 at 9.21.48 PM.png
+charts/Screen Shot 2016-03-20 at 1.01.10 PM.png
+charts/Screen Shot 2016-03-20 at 2.19.30 PM.png
+charts/c973.png
+docdir/Appendices
+docdir/Bibliography
+docdir/Figures
+docdir/Frontmatter
+docdir/Sections
+docdir/master-blx.bib
+docdir/master.aux
+docdir/master.bbl
+docdir/master.blg
+docdir/master.log
+docdir/master.pdf
+docdir/master.run.xml
+docdir/master.synctex.gz
+docdir/master.tex
+docdir/master.toc
+docdir/preamble.tex
+ipythes/1200K.csv
+ipythes/187K.csv
+ipythes/20K.csv
+ipythes/256K.csv
+ipythes/46K.csv
+ipythes/All_WT_for_coopfit_tsv.csv
+ipythes/Multifit Exampls.ipynb
+ipythes/Wild_Type_Fit
+ipythes/__pycache__
+ipythes/dataframefromcsv1.ipynb
+ipythes/derp.csv
+ipythes/dict_work.ipynb
+ipythes/emcee site example.ipynb
+ipythes/emcee_lmfit_ex.ipynb
+ipythes/finally_making_sense.ipynb
+ipythes/finalsene.ipynb
+ipythes/fitter_env.yml
+ipythes/getting_to_dict-of-dfs.ipynb
+ipythes/klotzfitter.py
+ipythes/krinkle.ipynb
+ipythes/lerp.txt
+ipythes/ligmods.py
+ipythes/minfuncs.py
+ipythes/mult_obj.py
+ipythes/multifit.py
+ipythes/nbs
+ipythes/objfun.py
+ipythes/panders.ipynb
+ipythes/rtotswt.csv
+ipythes/save.file.npy
+ipythes/save.p
+ipythes/sv.file
+ipythes/sv.file.npy
+ipythes/test.pdf
