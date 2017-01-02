@@ -57,3 +57,6 @@ def wym_rtot_sp(rtot,lig,data,parm,eps=None):
     else:
         weights = 1/(np.concatenate(eps))
         return (residual*weights)
+    
+def ptest():
+    print('the model is hott')

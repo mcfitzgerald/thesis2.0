@@ -61,7 +61,7 @@ def datprep(satdat,rtotdat):
         
         data_labels = colist(sats) #note to self: i've computed colist twice now, 'chexkidx' func is costly
         
-        rtotal_values = rtotlist(rtots)
+        rtotal_values = np.array(rtotlist(rtots))
         
         list_of_frames = framelist(sats,data_labels)
         
