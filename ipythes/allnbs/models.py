@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 #define an objective function for use with lmfit (must mesh with lmfit.Parameter class)
 def wyman_lmfit(parm,lig,data,rtot,eps=None):
@@ -115,6 +116,17 @@ def wyman_bestfit(parm,lig,rtot):
     2*l20*k21*rfree*ligc + 2*l20*k21*k22*rfree*(np.square(ligc)))
     
     return bfrac
+
+def viewf(parms, ligs, sats, rtots, symbol='-', index=None):
+    """parms is the least_squares result.x"""
+    colors = ['b','g','r','c','m','y','k','dimgrey','lightgrey','darkgrey','silver','gainsboro','salmon','teal','sage','wheat','violet','plum','thistle']
+    if index is None:
+        for i in range(len(ligs)):
+            plt.semilogx(ligs[i], wyman_bestfit(parms,ligs[i],rtots[i]),symbol, color=colors[i])
+            plt.semilogx(ligs[i], sats[i],'.',color=colors[i])
+    else:
+        plt.semilogx(ligs[index], wyman_bestfit(parms,ligs[index],rtots[index]),symbol, color=colors[index])
+        plt.semilogx(ligs[index], sats[index],'.',color=colors[index])
 
 def ptest():
     print('the model is hott')
