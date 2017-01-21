@@ -127,6 +127,14 @@ def viewf(parms, ligs, sats, rtots, symbol='-', index=None):
     else:
         plt.semilogx(ligs[index], wyman_bestfit(parms,ligs[index],rtots[index]),symbol, color=colors[index])
         plt.semilogx(ligs[index], sats[index],'.',color=colors[index])
+        
+def resplot(result, ligs, rtots):
+    """takes result=output from scipy.optimize.least_squares, ligs=ligand values from data, 
+    rtots=total receptor concentration from data and returns a plot of residuals vs fitted values"""
+    parm = result.x
+    resid = result.fun
+    fitted = np.concatenate([wyman_bestfit(parm,ligs[i],rtots[i]) for i in range(len(ligs))])
+    plt.plot(fitted,resid,'.')
 
 def ptest():
     print('the model is hott')
