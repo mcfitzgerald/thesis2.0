@@ -88,7 +88,33 @@ def wym_rtot_sp(rtot,lig,data,parm,eps=None):
         weights = 1/(np.concatenate(eps))
         return (residual*weights)
     
+#define an objective function for use with scipy optimize (obviates parameter class)
+#weights are just the fitted y data
+def wyman_sp_relwt(parm,lig,data,rtot):
+    k11 = parm[0]
+    k21 = parm[1]
+    k22 = parm[2]
+    l20 = parm[3]
     
+    ligc = np.concatenate(lig)
+    datac = np.concatenate(data)
+    
+    rfree = (((-1 - k11*ligc)) + \
+    (np.sqrt(np.concatenate((np.square((1 + k11*lig)) + \
+    8.*l20*rtot*(1 + k21*lig + k21*k22*(np.square(lig)))))))) \
+    / (4*l20*(1 + k21*ligc + k21*k22*(np.square(ligc))))    
+       
+    bfrac = (k11*ligc + l20*k21*rfree*ligc + \
+    2*l20*k21*k22*rfree*(np.square(ligc))) \
+    / (1 + 2*l20*rfree + k11*ligc + \
+    2*l20*k21*rfree*ligc + 2*l20*k21*k22*rfree*(np.square(ligc)))
+    
+    residual = (bfrac - datac)
+    
+    return (residual/np.sqrt(bfrac))
+
+
+
 #function to return fractional saturations given lig concentratoins and parameters
 #useful to show lines of best fit. note that no concatenation of lig arrays take place
 #can only handle one ligset at a time and therefore must be looped for multiple lig sets,
@@ -116,25 +142,3 @@ def wyman_bestfit(parm,lig,rtot):
     2*l20*k21*rfree*ligc + 2*l20*k21*k22*rfree*(np.square(ligc)))
     
     return bfrac
-
-def viewf(parms, ligs, sats, rtots, symbol='-', index=None):
-    """parms is the least_squares result.x"""
-    colors = ['b','g','r','c','m','y','k','dimgrey','lightgrey','darkgrey','silver','gainsboro','salmon','teal','sage','wheat','violet','plum','thistle']
-    if index is None:
-        for i in range(len(ligs)):
-            plt.semilogx(ligs[i], wyman_bestfit(parms,ligs[i],rtots[i]),symbol, color=colors[i])
-            plt.semilogx(ligs[i], sats[i],'.',color=colors[i])
-    else:
-        plt.semilogx(ligs[index], wyman_bestfit(parms,ligs[index],rtots[index]),symbol, color=colors[index])
-        plt.semilogx(ligs[index], sats[index],'.',color=colors[index])
-        
-def resplot(result, ligs, rtots):
-    """takes result=output from scipy.optimize.least_squares, ligs=ligand values from data, 
-    rtots=total receptor concentration from data and returns a plot of residuals vs fitted values"""
-    parm = result.x
-    resid = result.fun
-    fitted = np.concatenate([wyman_bestfit(parm,ligs[i],rtots[i]) for i in range(len(ligs))])
-    plt.plot(fitted,resid,'.')
-
-def ptest():
-    print('the model is hott')
