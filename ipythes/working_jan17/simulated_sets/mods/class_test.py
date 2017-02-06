@@ -93,9 +93,14 @@ class WymanSimFit(object):
     dguess = [10.,10.,10.,100.]
     dbounds = ((0.,0.,0.,0.,),(100.,100.,100.,10000.))
     
-    def __init__(self, model, guess=dguess, bounds=dbounds, **kwargs):
+    def __init__(self, model, guess=dguess, bounds=dbounds, weight=0, **kwargs):
         '''Takes Wyman Model Object'''
         self.model = model
         self.guess = np.array(guess)
         self.bounds = bounds
-        self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot),**kwargs) for i in range(self.model.meanset.shape[0])]
+        if weight == 1:
+            self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot,self.model.stdset[i]),**kwargs) for i in range(self.model.meanset.shape[0])]
+        elif weight == 2:
+            self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot,(0.05*self.model.meanset[i])),**kwargs) for i in range(self.model.meanset.shape[0])]
+        else:
+            self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot),**kwargs) for i in range(self.model.meanset.shape[0])]
