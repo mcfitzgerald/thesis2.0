@@ -1,3 +1,4 @@
+import numpy as np
 import matplotlib.pyplot as plt
 
 def semlog(lig,sat,labs=None):
@@ -9,23 +10,23 @@ def semlog(lig,sat,labs=None):
             plt.semilogx(lig[i],sat[i],'o', label=labs[i])
             plt.legend(loc=4,prop={'size':6},numpoints=1)
     
-def viewf(parms, ligs, sats, rtots, symbol='-', index=None):
+def viewf(model, parms, ligs, sats, rtots, symbol='--', index=None):
     """parms is the least_squares result.x"""
     colors = ['b','g','r','c','m','y','k','dimgrey','lightgrey','darkgrey','silver','gainsboro','salmon','teal','sage','wheat','violet','plum','thistle']
     if index is None:
         for i in range(len(ligs)):
-            plt.semilogx(ligs[i], wyman_bestfit(parms,ligs[i],rtots[i]),symbol, color=colors[i])
+            plt.semilogx(ligs[i], model(parms,ligs[i],rtots[i]),symbol, color=colors[i])
             plt.semilogx(ligs[i], sats[i],'.',color=colors[i])
     else:
-        plt.semilogx(ligs[index], wyman_bestfit(parms,ligs[index],rtots[index]),symbol, color=colors[index])
+        plt.semilogx(ligs[index], model(parms,ligs[index],rtots[index]),symbol, color=colors[index])
         plt.semilogx(ligs[index], sats[index],'.',color=colors[index])
         
-def resplot(result, ligs, rtots):
+def resplot(model,result, ligs, rtots):
     """takes result=output from scipy.optimize.least_squares, ligs=ligand values from data, 
     rtots=total receptor concentration from data and returns a plot of residuals vs fitted values"""
     parm = result.x
     resid = result.fun
-    fitted = np.concatenate([wyman_bestfit(parm,ligs[i],rtots[i]) for i in range(len(ligs))])
+    fitted = np.concatenate([model(parm,ligs[i],rtots[i]) for i in range(len(ligs))])
     plt.plot(fitted,resid,'.')
 
     

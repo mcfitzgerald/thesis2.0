@@ -52,6 +52,7 @@ class WymanSim(object):
         self.rtot = np.array(rtot)
         self.ligs = np.array([dilser(ligrange[0],ligrange[1],ligrange[2]) for i in range(len(self.rtot))])
         self.bfrac = np.array([WymanSim.genfunc(self.parms,self.ligs[i],self.rtot[i]) for i in range(len(self.rtot))])
+        self.noise = noise
         self.noised = np.array([[np.random.normal(self.bfrac,(noise*self.bfrac)) for i in range(reps)] for i in range(sets)])
         self.meanset = np.array([self.noised[i].mean(axis=0) for i in range(len(self.noised))])
         self.stdset = np.array([self.noised[i].std(axis=0) for i in range(len(self.noised))])
@@ -89,7 +90,28 @@ class WymanSimFit(object):
             weights = 1/(np.concatenate(eps))
             return (residual*weights)
     
+    def optwrap(self,err=None,**kwargs):
+        if err is None:
+            return [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds, \
+                    args=(self.model.ligs,self.model.meanset[i],self.model.rtot),**kwargs) \
+                    for i in range(self.model.meanset.shape[0])]
+        else:
+            return [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds, \
+                    args=(self.model.ligs,self.model.meanset[i],self.model.rtot,err[i]),**kwargs) \
+                    for i in range(self.model.meanset.shape[0])]
     
+    def fitwrap(self,weight,**kwargs):
+        if weight == 1:
+            return WymanSimFit.optwrap(self,err=self.model.stdset,**kwargs)
+        elif weight == 2: 
+            return WymanSimFit.optwrap(self,err=(self.model.noise*self.model.meanset),**kwargs)
+        elif weight == 3:
+            return WymanSimFit.optwrap(self,err=(self.model.meanset),**kwargs)
+        else:
+            return WymanSimFit.optwrap(self,**kwargs)
+    
+    
+    #default values
     dguess = [10.,10.,10.,100.]
     dbounds = ((0.,0.,0.,0.,),(100.,100.,100.,10000.))
     
@@ -98,9 +120,9 @@ class WymanSimFit(object):
         self.model = model
         self.guess = np.array(guess)
         self.bounds = bounds
-        if weight == 1:
-            self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot,self.model.stdset[i]),**kwargs) for i in range(self.model.meanset.shape[0])]
-        elif weight == 2:
-            self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot,(0.05*self.model.meanset[i])),**kwargs) for i in range(self.model.meanset.shape[0])]
-        else:
-            self.fits = [optimize.least_squares(WymanSimFit.fitfunc,self.guess,bounds=self.bounds,args=(self.model.ligs,self.model.meanset[i],self.model.rtot),**kwargs) for i in range(self.model.meanset.shape[0])]
+        self.fits = WymanSimFit.fitwrap(self,weight,**kwargs)
+        self.ests = np.array([self.fits[i].x for i in range(len(self.fits))])
+        self.k11 = self.ests[:,0]
+        self.k21 = self.ests[:,1]
+        self.k22 = self.ests[:,2]
+        self.l20 = self.ests[:,3]
