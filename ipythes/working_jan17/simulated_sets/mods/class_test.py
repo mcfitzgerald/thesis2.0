@@ -48,12 +48,14 @@ class WymanSim(object):
     
     def __init__(self,parms=dparms,rtot=drtot,ligrange=dlrange,reps=drp,sets=dst,noise=dns):
         '''Returns a Wyman model object'''
+        self.sets = sets
+        self.reps = reps
         self.parms = np.array(parms)
         self.rtot = np.array(rtot)
         self.ligs = np.array([dilser(ligrange[0],ligrange[1],ligrange[2]) for i in range(len(self.rtot))])
         self.bfrac = np.array([WymanSim.genfunc(self.parms,self.ligs[i],self.rtot[i]) for i in range(len(self.rtot))])
         self.noise = noise
-        self.noised = np.array([[np.random.normal(self.bfrac,(noise*self.bfrac)) for i in range(reps)] for i in range(sets)])
+        self.noised = np.array([[np.random.normal(self.bfrac,(self.noise*self.bfrac)) for i in range(self.reps)] for i in range(self.sets)])
         self.meanset = np.array([self.noised[i].mean(axis=0) for i in range(len(self.noised))])
         self.stdset = np.array([self.noised[i].std(axis=0) for i in range(len(self.noised))])
 
@@ -126,3 +128,4 @@ class WymanSimFit(object):
         self.k21 = self.ests[:,1]
         self.k22 = self.ests[:,2]
         self.l20 = self.ests[:,3]
+         
