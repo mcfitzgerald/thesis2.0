@@ -1,13 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def semlog(lig,sat,labs=None):
+def semlog(lig,sat,symb,labs=None):
+    colors =['b','g','r','c','m','y','k','dimgrey','lightgrey','darkgrey','silver','gainsboro','salmon','teal','sage','wheat','violet','plum','thistle']
     if labs is None:
         for i in range(len(sat)):
-            plt.semilogx(lig[i],sat[i],'o')
+            plt.semilogx(lig[i],sat[i],symb,color=colors[i])
     else:
         for i in range(len(sat)):
-            plt.semilogx(lig[i],sat[i],'o', label=labs[i])
+            plt.semilogx(lig[i],sat[i],symb, label=labs[i],color=colors[i])
             plt.legend(loc=4,prop={'size':6},numpoints=1)
     
 def viewf(model, parms, ligs, sats, rtots, symbol='--', index=None):
